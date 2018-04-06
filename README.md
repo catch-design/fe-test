@@ -7,7 +7,7 @@ A simple test for front end developers
 1. Fork or clone this repo.
 2. Set up a "static" project that includes a basic build system.
 3. Develop a page based on the design using SCSS and a templating language of your choice.
-4. Create a pull request or email us at [dev@catch.co.nz](mailto:dev@catch.co.nz)
+4. If you are completing this test as part of a job application please include a zip file of your project with your application otherwise create a pull request or email us at [dev@catch.co.nz](mailto:dev@catch.co.nz).
 
 ### Guidelines
 
