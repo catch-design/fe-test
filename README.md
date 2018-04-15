@@ -2,14 +2,22 @@
 
 A simple test for front end developers
 
-## Instructions
+## Install
+
+To install use `npm install` or run `yarn`
+
+
+
+## Original README.md contents
+
+### Instructions
 
 1. Fork or clone this repo.
 2. Set up a "static" project that includes a basic build system.
 3. Develop a page based on the design using SCSS and a templating language of your choice.
 4. If you are completing this test as part of a job application please include a zip file of your project (including git config/metadata) with your application otherwise create a pull request and we'll take a look :)
 
-### Guidelines
+#### Guidelines
 
 1. Your repo needs to include at minimum anything required to build the compiled HTML, CSS and JavaScript (where applicable).
    Detailed instructions should be provided in the `README.md` file to setup and run the app.
@@ -17,7 +25,7 @@ A simple test for front end developers
 3. Cross browser compatibility is important.
 3. Try not spend too much time on it.
 
-### Bonus Points
+#### Bonus Points
 
 * Consume dependencies with tools like Bower, NPM and RubyGems/Bundler
 * Use patterns like BEM, ITCSS
