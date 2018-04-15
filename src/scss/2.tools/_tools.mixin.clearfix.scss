@@ -1,0 +1,14 @@
+/**
+ * TOOLS.MIXIN.CLEARFIX
+ *
+ * @description : Force an element to self-clear floated children
+ *
+ */
+
+@mixin clearfix {
+	&::after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+}

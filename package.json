@@ -1,56 +1,58 @@
 {
-    "name": "gulp-compile-handlebars-testing",
-    "version": "0.0.1",
-    "description": "Compile Handlebars templates to file via gulp plugin - taken from the work of @kaanon",
-    "license": "MIT",
-    "repository": "brenmurrell/handlebars-static-html-generator",
-    "author": {
-      "name": "Bren Murrell",
-      "email": "bren@moon.co.nz",
-      "url": "http://brenmurrell.github.io"
-    },
-    "engines": {
-      "node": ">=0.10.0"
-    },
-    "scripts": {
-      "test": "mocha"
-    },
-    "files": [
-      "index.js"
-    ],
-    "keywords": [
-      "gulp",
-      "handlebars",
-      "gulp-plugin",
-      "template",
-      "compile",
-      "html",
-      "rendering"
-    ],
-    "dependencies": {
-      "browser-sync": "^2.13.0",
-      "es6-promise": "^4.0.5",
-      "gulp": "^3.9.1",
-      "gulp-autoprefixer": "^3.1.0",
-      "gulp-imagemin": "~3.0",
-      "gulp-notify": "^2.2.0",
-      "gulp-plumber": "^1.1",
-      "gulp-sass": "^2.3.2",
-      "gulp-sourcemaps": "^1.6.0",
-      "gulp-uncss": "^1.0",
-      "gulp-util": "^3.0.7",
-      "gutil": "^1.6.4",
-      "meow": "^3.3.0",
-      "handlebars": ">=3.0.0",
-      "through2": "^0.6.3"
-    },
-    "devDependencies": {
-      "browser-sync": "^2.23.6",
-      "fs": "0.0.1-security",
-      "gulp-compile-handlebars": "^0.6.1",
-      "gulp-filelist": "^1.0.0",
-      "gulp-rename": "^1.2.2",
-      "gulp-sass": "^3.1.0",
-      "mocha": "*"
-    }
+  "name": "gulp-compile-handlebars-testing",
+  "version": "0.0.1",
+  "description": "Compile Handlebars templates to file via gulp plugin - taken from the work of @kaanon",
+  "license": "MIT",
+  "repository": "brenmurrell/handlebars-static-html-generator",
+  "author": {
+    "name": "Bren Murrell",
+    "email": "bren@moon.co.nz",
+    "url": "http://brenmurrell.github.io"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulp",
+    "handlebars",
+    "gulp-plugin",
+    "template",
+    "compile",
+    "html",
+    "rendering"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "browser-sync": "^2.13.0",
+    "es6-promise": "^4.0.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-imagemin": "~3.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uncss": "^1.0",
+    "gulp-util": "^3.0.7",
+    "gutil": "^1.6.4",
+    "handlebars": ">=3.0.0",
+    "meow": "^3.3.0",
+    "save": "^2.3.2",
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "fs": "0.0.1-security",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-filelist": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "mocha": "*"
+  }
 }

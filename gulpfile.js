@@ -111,7 +111,8 @@ gulp.task('sass', function(){
             if(has_error === '') {                                          // If we don't have an error, compiling was successful
                 gutil.log(gutil.colors.green('## CSS compile succeeded'));  // Woohoo!
             }
-        });
+        }
+    );
 });
 gulp.task('watch', function() {
 	gulp.watch('src/*.handlebars',{cwd:'./'}, ['createFileIndex']);

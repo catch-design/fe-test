@@ -1,0 +1,35 @@
+/**
+ * SETTINGS.COLORS
+ *
+ * @description : Color variable definitions
+ *
+ */
+
+/**
+ * Main Colours
+ */
+$night            : #101820;  
+$stone            : #697B95;  
+$offwhite         : #D2DCE8;
+$white            : #ffffff;
+$brand-blue       : #008FFF;  
+$brand-green      : #76E691;  
+$brand-green--alt : #53B16A;
+
+$col-heading-color : $night;
+$col-text-color    : $stone;
+
+$col-brand-primary:          $brand-blue;
+$col-brand-secondary:        $brand-green;
+$col-brand-secondary-accent: $brand-green--alt;
+
+$col-borders: $offwhite;
+$col-input-bg: $white;
+
+/**
+ * UX/Validation colors
+ */
+$notice        : #2ab9ff;  // Blue
+$confirm       : #6fd100;  // Green
+$alert         : #ffa800;  // Orange
+$warning       : #c60000;  // Red
