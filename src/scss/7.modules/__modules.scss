@@ -1,0 +1,20 @@
+.module {
+    max-width: $bodyMaxSlim;
+    background-color: beige;
+    margin: 0 auto;
+}
+
+.module__title {
+    font-size: 14px;
+    line-height: 18px;
+    color: $col-text-color;
+    font-weight: 600;
+    margin: 0;
+}
+
+.module__title--light {
+    font-size: 14px;
+    line-height: 18px;
+    color: $col-text-color;
+    font-weight: 400;
+}

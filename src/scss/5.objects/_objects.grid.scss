@@ -1,0 +1,219 @@
+/**
+ * OBJECTS.GRID
+ *
+ * @description : The NV Grid
+ * @settings    : See /1.settings/_settings.grid.scss
+ *
+ */
+
+/** -------------------------------------------------------
+ *  GRID WIDTH CALULATOR
+ */
+
+$gridMap: (); //set an empty map for starters
+//this loop creates an array (a Sass "map") of possible column width percentages
+@for $x from 1 through $gridCols {
+    $gridPercentage: percentage(decimal-floor(($x / $gridCols), 10));
+    $gridMap: map-merge($gridMap, ("#{$x}": $gridPercentage));
+}
+
+/**
+ * General Styles
+ */
+
+// Box sizing
+*, *:before, *:after {
+    box-sizing: $boxSizing;
+}
+// Body //
+.b {
+    position: relative;
+    max-width: $bodyMax;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Body slim //
+.b-s {
+    max-width: $bodyMaxSlim;
+}
+
+/**
+ *  Helper classes for non-grid items so they fit nicely within the grid
+ */
+.ng-p {
+    padding-left: $gutter;
+    padding-right: $gutter;
+}
+.ng-pr {
+    padding-left: 0;
+    padding-right: $gutter;
+}
+.ng-pl {
+    padding-left: $gutter;
+    padding-right: 0;
+}
+.ng-m {
+    margin-left: $gutter;
+    margin-right: $gutter;
+}
+.ng-mr {
+    margin-left: 0;
+    margin-right: $gutter;
+}
+.ng-ml {
+    margin-left: $gutter;
+    margin-right: 0;
+}
+
+
+/**
+ * The Grid
+ */
+.g {
+    font-size: 0; // Remove spacing between child inline-block elements
+    text-rendering: optimizespeed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .no-flexbox & { // fallback non-flex browsers (modernizr required)
+        display: table-cell;
+        float: left;
+        width: 100%;
+    }
+
+    &-m { // This is only needed if .gi-m classes are applied to children
+        margin: 0 $negativeGutter;
+    }
+}
+
+/** -------------------------
+ *  GRID ITEMS
+ */
+.gi {
+    display: inline-block;
+    font-size: initial;
+    text-rendering: auto;
+    vertical-align: top;
+    width: 100%;
+}
+
+//  Grid Item Modifiers
+
+// Grid Item – Padded
+.gi-p {
+    padding-left: $gutter;
+    padding-right: $gutter;
+}
+
+// Grid Item – Padded Right
+.gi-pr {
+    padding-right: $gutter;
+}
+
+// Grid Item – Padded Left
+.gi-pl {
+    padding-left: $gutter;
+}
+
+// Grid Item – Margin
+.gi-m {
+    margin-left: $gutter;
+    margin-right: $gutter;
+}
+
+// Grid Item – Margin Left
+.gi-ml {
+    margin-left: $gutter;
+}
+
+// Grid Item – Margin Right
+.gi-mr {
+    margin-right: $gutter;
+}
+
+
+// Grid Row – Center Horizontally
+.g-c {
+    justify-content: center;
+}
+
+
+// Grid Row – Vertical Align Middle
+.g-vam {
+    align-items: center;
+}
+// Middle-align an individual grid cell
+.g-vam .gi,
+.g-vam .gi-p,
+.g-vam .gi-pl,
+.g-vam .gi-pr,
+.gi-m {
+    align-self: center;
+    vertical-align: middle;
+}
+
+// Grid Row – Vertical Align Bottom
+.g-vab {
+    align-items: flex-end;
+}
+
+// Bottom-align an individual grid cell
+.g-vab .gi,
+.g-vab .gi-p,
+.g-vab .gi-pl,
+.g-vab .gi-pr,
+.gi-b {
+    align-self: flex-end;
+    vertical-align: bottom;
+}
+
+// Grid generation including widths for given number of columns
+@each $i in $gridMap {
+    $key: nth($i, 1);
+    $value: nth($i, 2);
+    .gi-#{$key} { width: $value; }
+    .gi-m.gi-#{$key} { width: $value - ($gutter * 2); }
+    .gi-mr.gi-#{$key}, .gi-mr.gi-#{$key} { width: $value - $gutter; }
+    @if ($includeIndent == true) {
+        .gi-in-#{$key} {
+            margin-left: $value;
+        }
+        .gi-m.gi-in-#{$key},
+        .gi-ml.gi-in-#{$key} {
+            margin-left: $value + $gutter;
+        }
+    }
+}
+
+//repeat for responsive breakpoints
+@each $breakpoint, $width in  $breakpoints {
+    @media (min-width: $width) {
+        @each $i in $gridMap {
+            $key: nth($i, 1);
+            $value: nth($i, 2);
+            .gi-#{$breakpoint}-#{$key} { width: $value; }
+            .gi-m.gi-#{$breakpoint}-#{$key} { width: $value - ($gutter * 2); }
+            .gi-ml.gi-#{$breakpoint}-#{$key},
+            .gi-mr.gi-#{$breakpoint}-#{$key} { width: $value - $gutter; }
+            @if ($includeIndent == true) {
+                .gi-#{$breakpoint}-in-#{$key} {
+                    margin-left: $value;
+                }
+                .gi-m.gi-#{$breakpoint}-in-#{$key},
+                .gi-ml.gi-#{$breakpoint}-in-#{$key} {
+                    margin-left: $value + $gutter;
+                }
+            }
+        }
+
+        // Breakpoint-specific left/right padding
+        .gi-#{$breakpoint}-pr {
+            padding-left: 0; padding-right: $gutter;
+        }
+        .gi-#{$breakpoint}-pl {
+            padding-left: $gutter; padding-right: 0;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+/**
+ * ELEMENTS.TYPE
+ *
+ * @description : Basic typographical styles
+ *
+ */
+
+$body-font: Arial, Verdana, sans-serif;
+$heading-font: Arial, Verdana, sans-serif;
+
+body {
+    color: $col-text-color;
+    font-family: $body-font;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
+
+
+// HEADINGS
+h1, h2, h3, h4, h5, h6 {
+    color: $col-heading-color;
+    font-family: $heading-font;
+    line-height: $base-line-height * 3;
+    margin: ($base-line-height * 2) 0 $base-line-height 0;
+}
+
+h1 {
+    font-size: rem(60);
+}
+
+h2 {
+    font-size: rem(48);
+}
+
+h3 {
+    font-size: rem(36);
+}
+
+h4 {
+    font-size: rem(30);
+}
+
+h5 {
+    font-size: rem(24);
+}
+
+h6 {
+    font-size: rem(21);
+}
+
+p {
+    margin: 0 0 $base-line-height 0;
+}
+
+ul {
+
+}
+
+ol {
+
+}
