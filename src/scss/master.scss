@@ -23,7 +23,6 @@
 @import '1.settings/settings.breakpoints';
 @import '1.settings/settings.colors';
 @import '1.settings/settings.grid';
-@import '1.settings/settings.font.opensans';
 
 /**
  *  2. TOOLS
@@ -48,6 +47,7 @@
 @import '4.elements/elements.disabled';
 @import '4.elements/elements.images';
 @import '4.elements/elements.input';
+@import '4.elements/elements.links';
 @import '4.elements/elements.select';
 @import '4.elements/elements.type';
 
@@ -60,23 +60,26 @@
 @import '5.objects/objects.layout';
 
 /**
- *  6. COMPONENTS
+ *  6. MODULES
+ *  Simple components or collections of components (complex) that make up a horizontal 
+ *  visual block within the UI
+ */
+ @import '6.modules/_modules';
+ @import '6.modules/modules.form';
+ @import '6.modules/modules.pageheader';
+ @import '6.modules/modules.spacer';
+ 
+
+/**
+ *  7. COMPONENTS
  *  A component is a reusable chunk of UI that is clearly designed, as opposed to an object.
  *  Clearly refers to a block of UI: pagination, buttons, modals, icons... etc
  *  You should be able to take a component and paste it anywhere in the app
  *  Must be built with classes only
  */
-@import '6.components/components.buttons';
+@import '7.components/components.buttons';
+@import '7.components/components.snippet';
 
-/**
- *  7. MODULES
- *  More simple components or collections of components (complex) that make up a horizontal 
- *  visual block within the UI
- */
-@import '7.modules/_modules';
-@import '7.modules/modules.form';
-@import '7.modules/modules.pageheader';
-@import '7.modules/modules.spacer';
  
 
 /**
