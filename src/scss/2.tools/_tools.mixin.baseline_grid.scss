@@ -1,0 +1,16 @@
+/**
+ * TOOLS.MIXIN.BASELINE_GRID
+ *
+ * @description :  Adds a baseline grid for setting type.
+ *                 Used in development only.
+ *
+ */
+
+/**
+ * @param $spacing            Set the desired line height of the grid. Defaults to the base line height
+ */
+@mixin baseline_grid($spacing: $base-line-height){
+    background-image: linear-gradient(to bottom, #0ff 0, rgba(255,255,255,0) 1px);
+    background-repeat: repeat-y;
+    background-size: 100% $spacing;
+}

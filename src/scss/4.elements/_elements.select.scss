@@ -1,0 +1,8 @@
+select {
+    @extend input;
+    color: $col-text-color;
+}
+
+option {
+    //color: grey;
+}

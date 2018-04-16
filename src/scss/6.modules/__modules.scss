@@ -1,0 +1,26 @@
+.module {
+    max-width: $bodyMaxSlim;
+    margin: 0 auto;
+}
+.module__inner {
+    @extend .module;
+}
+.module--fw {
+    max-width: none;
+    width: 100%;
+}
+
+.module__title {
+    font-size: 14px;
+    line-height: 18px;
+    color: $col-text-color;
+    font-weight: 600;
+    margin: 0;
+}
+
+.module__title--light {
+    font-size: 14px;
+    line-height: 18px;
+    color: $col-text-color;
+    font-weight: 400;
+}
