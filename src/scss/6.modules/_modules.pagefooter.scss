@@ -2,4 +2,22 @@
     border-top: 1px solid $col-borders;
     background-color: $col-bg-alt;
     padding: 90px 0;
+    text-align: center;
+    @media all and (min-width: $md) {
+        text-align: left;
+    }
+}
+
+.pagefooter__meta {
+    order: 1;
+    @media all and (min-width: $md) {
+        order:0;
+        padding-right: 50px;
+    }
+}
+.pagefooter__contact {
+    order: 0;
+    @media all and (min-width: $md) {
+        order: 0;
+    }
 }
