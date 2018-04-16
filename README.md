@@ -21,6 +21,7 @@ This is also to be deemed to be relatively out of scope as I'm likely to be usin
 something I would normally reconcile but have pushed to "backlog" given the time constraints.
 * the grid system I've used is actually NOT very helpful in it's padding as it works it out by percentage instead of a fixed width. In retrospect,
 I'd have much preferred a px based padding system - this has lined up the scroll gallery poorly.
+* all git workings etc. can be seen on [my fork](https://github.com/BrenMurrell/fe-test)
 
 ## Original README.md contents
 
