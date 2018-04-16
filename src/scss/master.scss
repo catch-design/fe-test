@@ -15,7 +15,6 @@
 
 //  0. PLUGINS
 @import '../../node_modules/breakpoint-sass/stylesheets/_breakpoint.scss';
-@import '../../node_modules/swiper/dist/swiper.min.css';
 
 /**
  * 1. SETTINGS
@@ -68,6 +67,7 @@
  @import '6.modules/_modules';
  @import '6.modules/modules.form';
  @import '6.modules/modules.pageheader';
+ @import '6.modules/modules.scroll-gallery';
  @import '6.modules/modules.spacer';
  
 
