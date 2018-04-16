@@ -10,7 +10,8 @@
  */
 $night            : #101820;  
 $stone            : #697B95;  
-$offwhite         : #D2DCE8;
+$lightgrey        : #D2DCE8;
+$offwhite         : #fafafa;
 $white            : #ffffff;
 $brand-blue       : #008FFF;  
 $brand-green      : #76E691;  
@@ -23,11 +24,13 @@ $col-brand-primary:          $brand-blue;
 $col-brand-secondary:        $brand-green;
 $col-brand-secondary-accent: $brand-green--alt;
 
-$col-borders: $offwhite;
+$col-borders: $lightgrey;
 $col-input-bg: $white;
 
 $col-link: $brand-blue;
 $col-link-alt: darken($brand-blue, 10%);
+
+$col-bg-alt:    $offwhite;
 
 /**
  * UX/Validation colors
