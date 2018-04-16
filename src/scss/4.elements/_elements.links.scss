@@ -1,0 +1,8 @@
+a {
+    color: $col-link;
+    text-decoration: none;
+    &:hover {
+        color: $col-link-alt;
+        text-decoration: underline;        
+    }
+}
