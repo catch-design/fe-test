@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FE Test - of sorts</title>
     <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.css">
   </head>
   <body>
     <div class="module pageheader">
@@ -62,11 +63,11 @@
     </div>    <div class="module snippets">
         <div class="g">
             <div class="gi gi-md-2"></div>
-            <div class="gi gi-md-8">
+            <div class="gi gi-p gi-md-8">
                 <div class="g">
                     <div class="gi gi-p gi-md-6 snippet">
                         <a href="#">
-                            <img class="snippet__image" src="https://picsum.photos/370/198" />
+                            <img class="snippet__image" src="https://picsum.photos/370/198?random" />
                         </a>
                         <h2 class="module__title snippet__title">Snippet title</h2>
                         <p class="snippet__intro">
@@ -75,7 +76,7 @@
                         <p><a href="#">View some more</a></p>
                     </div>                <div class="gi gi-p gi-md-6 snippet">
                         <a href="#">
-                            <img class="snippet__image" src="https://picsum.photos/370/198" />
+                            <img class="snippet__image" src="https://picsum.photos/370/198?random" />
                         </a>
                         <h2 class="module__title snippet__title">Snippet title</h2>
                         <p class="snippet__intro">
@@ -89,5 +90,59 @@
             <div class="gi gi-md-2"></div>
             
         </div>
-    </div></body>
+    </div>    <div class="module scroll-gallery">
+    
+        <div class="g">
+            <div class="gi gi-md-2"></div>
+            <div class="gi gi-p gi-md-8">
+                <div class="g">
+                    <div class="gi gi-p">
+                        <div class="scroll-gallery__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide scroll-gallery__slide">
+                                    <img class="scroll-gallery__image" src="https://picsum.photos/236/174?random" />
+                                </div>                            <div class="swiper-slide scroll-gallery__slide">
+                                    <img class="scroll-gallery__image" src="https://picsum.photos/236/174?random" />
+                                </div>                            <div class="swiper-slide scroll-gallery__slide">
+                                    <img class="scroll-gallery__image" src="https://picsum.photos/236/174?random" />
+                                </div>                            <div class="swiper-slide scroll-gallery__slide">
+                                    <img class="scroll-gallery__image" src="https://picsum.photos/236/174?random" />
+                                </div>                            <div class="swiper-slide scroll-gallery__slide">
+                                    <img class="scroll-gallery__image" src="https://picsum.photos/236/174?random" />
+                                </div>                            <div class="swiper-slide scroll-gallery__slide">
+                                    <img class="scroll-gallery__image" src="https://picsum.photos/236/174?random" />
+                                </div>                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>         
+            <div class="gi gi-md-2"></div>
+    
+        </div>
+    
+    </div>    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper ('.scroll-gallery__swiper', {
+            // Optional parameters
+            slidesPerView: 3.25,
+            spaceBetween: 30,
+            freeMode: true,
+            breakpoints: {
+                // when window width is <= 320px
+                320: {
+                    slidesPerView: 1.25,
+                    spaceBetween: 10
+                },
+                // when window width is <= 480px
+                480: {
+                    slidesPerView: 2.25,
+                    spaceBetween: 20
+                }
+            }
+        });
+
+        
+    </script>
+
+</body>
 </html>
