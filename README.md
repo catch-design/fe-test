@@ -19,6 +19,8 @@ This is also to be deemed to be relatively out of scope as I'm likely to be usin
 * The build system does not currently support JS or image files - this is why I've chosen to use a CDN for the slider
 * The slider I chose is not _quite_ right. The image sizes are responsive, ergo do not show the exact size as per the design. This is
 something I would normally reconcile but have pushed to "backlog" given the time constraints.
+* the grid system I've used is actually NOT very helpful in it's padding as it works it out by percentage instead of a fixed width. In retrospect,
+I'd have much preferred a px based padding system - this has lined up the scroll gallery poorly.
 
 ## Original README.md contents
 
