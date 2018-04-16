@@ -11,7 +11,7 @@ A simple test for front end developers. See notes / considerations for more info
 
 * This package uses an in-development (lightly tested) template builder that may cause a few oddities. The template builder 
 is outside of the scope of this test, so shouldn't be looked at too closely.
-* The compile gulp script compiles all of the handlebars templates and sass files into the `build` folder.
+* The compile gulp script builds all of the handlebars templates and sass files into the `dist` folder.
 * In the event you can't see the site when running `gulp serve` or get a "not found" error, stop the `serve` task and run `gulp compile` first, OR 
 simply open and save one of the partial handlebars files to recompile the site into the `dist` folder.
 * This package was developed in the most rapid way possible. It's using the default Sass install and grid system that I use on a daily basis.

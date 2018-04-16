@@ -66,6 +66,7 @@
  */
  @import '6.modules/_modules';
  @import '6.modules/modules.form';
+ @import '6.modules/modules.pagefooter';
  @import '6.modules/modules.pageheader';
  @import '6.modules/modules.scroll-gallery';
  @import '6.modules/modules.spacer';
@@ -78,6 +79,7 @@
  *  You should be able to take a component and paste it anywhere in the app
  *  Must be built with classes only
  */
+@import '7.components/components.address';
 @import '7.components/components.buttons';
 @import '7.components/components.snippet';
 
