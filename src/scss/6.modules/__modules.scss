@@ -2,6 +2,13 @@
     max-width: $bodyMaxSlim;
     margin: 0 auto;
 }
+.module__inner {
+    @extend .module;
+}
+.module--fw {
+    max-width: none;
+    width: 100%;
+}
 
 .module__title {
     font-size: 14px;
