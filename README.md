@@ -14,15 +14,16 @@ A simple test for front end developers
 1. Your repo needs to include at minimum anything required to build the compiled HTML, CSS and JavaScript (where applicable).
    Detailed instructions should be provided in the `README.md` file to setup and run the app.
 2. Use best practice.
-3. Cross browser compatibility is important.
-3. Try not spend too much time on it.
+3. Show us what you're capable of without using CSS frameworks such as foundation, bootstrap, etc.
+4. Cross browser compatibility is important.
+5. Try not spend too much time on it.
 
 ### Bonus Points
 
-* Consume dependencies with tools like Bower, NPM and RubyGems/Bundler
 * Use patterns like BEM, ITCSS
+* Accessibility
+* Consume dependencies with tools like Bower, NPM and RubyGems/Bundler
 * Compile any assets with a build tool like gulp, webpack etc
 * Unit and code quality tests
 * Include a dev server
-* Accessibility
 * Pay attention to the grid system
