@@ -1,0 +1,30 @@
+/**
+ * COMPONENTS.BUTTONS
+ *
+ * @description : Main buttons
+ *
+ */
+
+// Base button styles
+.c-btn {
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    font-weight: 600;
+    
+}
+
+// Primary button
+.c-btn--pri {
+    background: $col-brand-secondary;
+    border-color: $col-brand-secondary-accent;
+    color: white;
+    &:hover {
+        background-color: $col-brand-secondary-accent;
+    }
+}
+
+// Secondary button
+.c-btn--sec {
+
+}

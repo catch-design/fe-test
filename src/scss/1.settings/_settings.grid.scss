@@ -1,0 +1,18 @@
+/**
+ * SETTINGS.GRID
+ *
+ * @description : Settings used in grid calculations
+ *
+ */
+
+$bodyMax:        90rem;
+$bodyMaxSlim:    73.125rem;
+$gridCols:       12;
+$boxSizing:      border-box;
+$includeIndent:  true;  // Set to true to create indent classes
+
+// Default Gutters
+$gutterValue:    28 !default;  // based on Piet & Diego's work 2.333% for 12 columns, 1.166% for 24 columns (12 * 2.333 = ~28 and 24 * 1.166 = ~28 too)
+$gutter:         percentage($gutterValue / $gridCols / 100);
+$negativeGutter: percentage($gutterValue / $gridCols / 100 * -1);
+$noMargin:       0 percentage($gutterValue / $gridCols / 100 * -1);

@@ -1,0 +1,14 @@
+.social {
+    margin-bottom: 30px;
+}
+.social__link {
+    display: inline;
+    margin-right: 14px;
+    &:hover {
+        text-decoration: none;
+    }
+    
+}
+.social__image {
+    display: inline-block;
+}

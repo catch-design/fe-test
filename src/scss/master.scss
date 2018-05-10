@@ -1,0 +1,94 @@
+/**
+ * MASTER.SCSS
+ *
+ * @Project     : Project Name
+ * @Author      : AuthorName [author.name@nvinteractive.com]
+ *
+ */
+
+
+// Set the viewport to resize responsively (similar to viewport meta tag)
+@viewport {
+	width: device-width;
+	zoom: 1;
+}
+
+//  0. PLUGINS
+@import '../../node_modules/breakpoint-sass/stylesheets/_breakpoint.scss';
+
+/**
+ * 1. SETTINGS
+ */
+@import '1.settings/settings.base';
+@import '1.settings/settings.breakpoints';
+@import '1.settings/settings.colors';
+@import '1.settings/settings.grid';
+
+/**
+ *  2. TOOLS
+ */
+@import '2.tools/tools.functions.scss';
+@import '2.tools/tools.mixin.position.scss';
+@import '2.tools/tools.mixin.clearfix.scss';
+@import '2.tools/tools.mixin.baseline_grid.scss';
+
+/**
+ * 3. GENERIC
+ */
+@import '3.generic/generic.reset';
+@import '3.generic/generic.boxsizing';
+
+/**
+ *  4. ELEMENTS
+ *  Basic styles for raw HTML elements
+ *  No classes here
+ */
+@import '4.elements/elements.base';
+@import '4.elements/elements.disabled';
+@import '4.elements/elements.images';
+@import '4.elements/elements.input';
+@import '4.elements/elements.links';
+@import '4.elements/elements.select';
+@import '4.elements/elements.type';
+
+/**
+ *  5. OBJECTS
+ *  These are repeating visual/structural patterns with no 'design' added
+ *  Must be built with classes only
+ */
+@import '5.objects/objects.grid';
+@import '5.objects/objects.layout';
+
+/**
+ *  6. MODULES
+ *  Simple components or collections of components (complex) that make up a horizontal 
+ *  visual block within the UI
+ */
+ @import '6.modules/_modules';
+ @import '6.modules/modules.form';
+ @import '6.modules/modules.pagefooter';
+ @import '6.modules/modules.pageheader';
+ @import '6.modules/modules.scroll-gallery';
+ @import '6.modules/modules.spacer';
+ 
+
+/**
+ *  7. COMPONENTS
+ *  A component is a reusable chunk of UI that is clearly designed, as opposed to an object.
+ *  Clearly refers to a block of UI: pagination, buttons, modals, icons... etc
+ *  You should be able to take a component and paste it anywhere in the app
+ *  Must be built with classes only
+ */
+@import '7.components/components.address';
+@import '7.components/components.buttons';
+@import '7.components/components.social';
+@import '7.components/components.snippet';
+
+ 
+
+/**
+ *  8. UTILITIES
+ */
+@import '8.utilities/utilities.layout';
+@import '8.utilities/utilities.type';
+

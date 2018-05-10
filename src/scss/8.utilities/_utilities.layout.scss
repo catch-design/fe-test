@@ -1,0 +1,19 @@
+/**
+ * UTILITIES.LAYOUT
+ *
+ * @description : These classes trump other preceeding styles.
+ *                Userful for quickly applying common adjustments.
+ */
+
+
+.u-fr {
+    float: right;
+}
+
+.u-fl {
+    float: left;
+}
+
+.u-mb {
+    margin-bottom: $spacer;
+}
