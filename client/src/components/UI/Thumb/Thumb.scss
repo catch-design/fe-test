@@ -1,0 +1,15 @@
+.gallery__thumb {
+    display: inline-block;
+    margin: 0 5px;
+    border: 0 solid #E0E6ED;
+    border-radius: 4.37px;
+    height: auto;
+    margin: 0 5px;
+
+    img{
+        height: 174px;
+        margin: 0;
+        width: auto;
+        max-width: 236px;
+    }
+}

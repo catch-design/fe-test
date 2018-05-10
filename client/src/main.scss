@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+}
+
+.h1 {
+  font-size: 22pt;
+}
+
+a {
+  cursor: pointer;
+}
+
+/** grid classes & variables **/
+
+.grid__container {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+$grid-gap: 30px;
+$grid-columns-8: 75%;
+$content-grid-columns-4: 50%;
+$content-grid-columns-1: 12.5%;
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/** variables & extends **/
+
+$default-blue: #008FFF;
+$default-text-color: #697B95;
+
+%content-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: $default-text-color;
+  letter-spacing: 0.23px;
+  line-height: 18px;
+}
+
+%default-copy {
+  font-size: 14px;
+  color: $default-text-color;
+  letter-spacing: 0.23px;
+  line-height: 18px;
+}
+
+%default-link {
+  font-size: 14px;
+  color: $default-blue;
+  letter-spacing: 0.23px;
+  line-height: 18px;
+
+  &:hover {
+    font-size: 14px;
+    color: $default-text-color;
+    letter-spacing: 0.23px;
+    line-height: 18px;
+  }
+}

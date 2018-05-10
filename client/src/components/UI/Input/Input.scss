@@ -1,0 +1,103 @@
+@import '../../../main';
+
+@media screen and (min-width: 640px) {
+  .signupform__inputholder {
+    width: 50%;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  width: 100%;
+  display: block;
+}
+
+.signupform__inputelement {
+  border: 1px solid #D2DCE8;
+  background-color: #ffffff;
+  margin: 12px 0;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 5px;;
+  width: 100%;
+  letter-spacing: 0.23px;
+  color: $default-text-color;
+  font-size: 14px;
+
+  &.invalid {
+    border: 1px solid red;
+  }
+
+  /**
+  Sorry for this non-BEM notation, but React didn't like the signupform__inputelement--invalid classname
+   */
+}
+
+.signupform__inputelement:focus {
+  outline: none;
+  background-color: #ffffff;
+  border: 1px solid $default-blue;
+  border-radius: 5px;
+  color: $default-blue;
+}
+
+.signupform__inputelement::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  letter-spacing: 0.23px;
+  color: $default-text-color;
+  font-size: 14px;
+  opacity: 1; /* Firefox */
+}
+
+.signupform__inputelement:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  letter-spacing: 0.23px;
+  color: $default-text-color;
+  font-size: 14px;
+}
+
+.signupform__inputelement::-ms-input-placeholder { /* Microsoft Edge */
+  letter-spacing: 0.23px;
+  color: $default-text-color;
+  font-size: 14px;
+}
+
+.signupform__inputelement:focus::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 11px;
+  color: $default-text-color;
+  letter-spacing: 0.18px;
+  text-align: right;
+  opacity: 1; /* Firefox */
+}
+
+.signupform__inputelement:focus:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 1; /* Firefox */
+  font-size: 11px;
+  color: $default-text-color;
+  letter-spacing: 0.18px;
+  text-align: right;
+}
+
+.signupform__inputelement:focus::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 1; /* Firefox */
+  font-size: 11px;
+  color: $default-text-color;
+  letter-spacing: 0.18px;
+  text-align: right;
+}
+
+
+.signup__select{
+  height:43px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+
+  background: url('../../../assets/images/icons/dropdown-arrow.png') no-repeat 96% 50%;
+}
+
+
+
+
+
+

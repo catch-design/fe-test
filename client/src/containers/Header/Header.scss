@@ -1,0 +1,15 @@
+@import '../../main';
+
+.header__container {
+  width: $grid-columns-8;
+  margin: 60px auto 48px;
+  max-width: 900px;
+
+  > h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #101820;
+    letter-spacing: -0.4px;
+    line-height: 30px;
+  }
+}
