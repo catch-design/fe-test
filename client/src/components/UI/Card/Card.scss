@@ -1,8 +1,7 @@
 @import '../../../main';
 
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 640px) {
   .catalogue__card {
-    width: $content-grid-columns-4;
     display: inline-block;
     margin: 0 0 42px 0;
 
@@ -16,7 +15,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 639px) {
   .catalogue__card {
     width: 100%;
     display: block;

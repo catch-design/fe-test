@@ -21,11 +21,37 @@ a {
   }
 }
 
-$grid-gap: 30px;
-$grid-columns-8: 75%;
-$content-grid-columns-4: 50%;
-$content-grid-columns-1: 12.5%;
+@media screen and (min-width: 639px) {
+  .col-8-12{
+    width: 75%;
+  }
 
+  .col-4-8{
+    width: 50%;
+  }
+
+  .col-5-8{
+    width: 62.5%;
+  }
+
+  .col-3-8{
+    width: 37.5%;
+  }
+
+  .col-4-5{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .col-8-12,
+  .col-4-8,
+  .col-5-8,
+  .col-3-8,
+  .col-4-5{
+    width: 100%;
+  }
+}
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;

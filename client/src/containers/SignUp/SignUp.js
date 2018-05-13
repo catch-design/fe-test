@@ -4,6 +4,7 @@ import Input from '../../components/UI/Input/Input';
 import Button from '../../components/UI/Button/Button';
 import Wrapper from '../../hoc/Wrapper/Wrapper';
 import classes from './SignUp.scss';
+import mainStyle from '../../main.scss';
 
 class SignUp extends Component {
 
@@ -154,7 +155,7 @@ class SignUp extends Component {
         }
         return (
             <Wrapper>
-                <div className={classes.signup__container}>
+                <div className={[classes.signup__container, mainStyle['col-8-12']].join(' ')}>
                 {form}
                 </div>
             </Wrapper>

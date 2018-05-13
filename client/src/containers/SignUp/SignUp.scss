@@ -2,7 +2,6 @@
 
 @media screen and (min-width: 640px) {
   .signup__container {
-    width: $grid-columns-8;
     margin: 0px auto;
   }
 
@@ -26,6 +25,7 @@
   }
 
   .signup__container {
+    min-width: 100%;
     padding: 0px 10px;
   }
 }

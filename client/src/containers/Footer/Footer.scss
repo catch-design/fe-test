@@ -1,6 +1,31 @@
 @import '../../main';
 
-@media screen and (max-width: 480px) {
+
+
+@media screen and (min-width: 640px) {
+  .footer__contentcontainer {
+    max-width: 780px;
+    margin: 0px auto;
+  }
+
+  .footer__social {
+    float: left
+  }
+
+  .footer__contact {
+    float: left;
+  }
+
+  .footer__socialiconsholder {
+    width: 100%;
+    float: left;
+    margin-bottom: 36px;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 639px) {
   .footer__contentcontainer {
     text-align: center;
     display: -ms-flexbox;
@@ -23,36 +48,6 @@
     display: inline-block;
     text-align: center;
   }
-
-}
-
-@media screen and (min-width: 481px) {
-  .footer__contentcontainer {
-    width: $grid-columns-8;
-    max-width: 780px;
-    margin: 0px auto;
-  }
-
-  .footer__social {
-    width: $content-grid-columns-4;
-    padding-right: $grid-gap;
-    float: left
-  }
-
-  .footer__contact {
-    width: $content-grid-columns-4;
-    padding-left: $content-grid-columns-1;
-    padding-right: $grid-gap;
-    float: left;
-  }
-
-  .footer__socialiconsholder {
-    width: 100%;
-    float: left;
-    margin-bottom: 36px;
-    height: auto;
-  }
-
 }
 
 .footer__container {

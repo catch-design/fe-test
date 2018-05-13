@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Wrapper from '../../hoc/Wrapper/Wrapper';
 import Card from '../../components/UI/Card/Card';
 import classes from './Catalogue.scss';
+import mainStyle from '../../main.scss';
 
 class Catalogue extends Component {
 
@@ -48,7 +49,7 @@ class Catalogue extends Component {
 
 
         return (
-            <div className={classes.catalogue__container}>
+            <div className={[classes.catalogue__container, mainStyle['col-8-12']].join(' ')}>
                 {catalogueItems}
             </div>
         )
