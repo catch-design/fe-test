@@ -96,7 +96,6 @@ class SignUp extends Component {
 
         updatedFormElement.value = event.target.value;
 
-
         updatedFormElement.valid = this.checkValidity(updatedFormElement.value, updatedFormElement.validation);
         updatedFormElement.touched = true;
         updatedSignupForm[inputIdentifier] = updatedFormElement;
@@ -106,7 +105,7 @@ class SignUp extends Component {
             formIsValid = updatedSignupForm[inputIdentifier].valid && formIsValid;
         }
 
-        this.setState({signupForm: updatedSignupForm, formIsValid: formIsValid});
+        this.setState({signupForm: updatedSignupForm, formIsValid: true});
     };
 
 
@@ -117,12 +116,20 @@ class SignUp extends Component {
             formData[formElementIdentifier] = this.state.signupForm[formElementIdentifier].value;
         }
         const submitObject = {
-            firstName: this.props.firstName,
-            lastName: this.props.lastName,
-            email: this.props.email,
-            city: this.props.city
-        }
+            firstName: formData.firstName,
+            lastName: formData.lastName,
+            email: formData.email,
+            city: formData.city
+        };
+
+        this.callApi(submitObject);
+
     };
+
+    callApi = (submitObject) => {
+
+    };
+
 
     render () {
         const formElementsArray = [];
@@ -135,10 +142,11 @@ class SignUp extends Component {
         }
 
         let form = [
-            <form key="form" className={classes.signup__form} onSubmit={this.submitHandler}>
+            <form key="form" className={classes.signup__form}>
                 {formElementsArray.map(formElement => (
                     <Input
                         key={formElement.id}
+                        elementId={formElement.id}
                         elementType={formElement.config.elementType}
                         elementConfig={formElement.config.elementConfig}
                         value={formElement.config.value}
@@ -148,8 +156,9 @@ class SignUp extends Component {
                         changed={(event) => this.inputChangedHandler(event, formElement.id)} />
                 ))}
             </form>,
-            <Button key="submitButton" disabled={!this.state.formIsValid}>Submit</Button>
+            <Button elementId="signupFormSubmitButton" clicked={this.submitHandler} key="submitButton" disabled={!this.state.formIsValid}>Submit</Button>
         ];
+
         if ( this.props.loading ) {
             form = <Spinner />;
         }

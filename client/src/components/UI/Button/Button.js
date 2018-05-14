@@ -3,6 +3,7 @@ import classes from './Button.scss';
 
 const button = (props) => (
     <button
+        data-testid={props.elementId}
         disabled={props.disabled}
         type={props.originalType || 'submit'}
         className={[classes.signup__button, classes[props.btnType]].join(' ')}

@@ -18,6 +18,7 @@ const input = ( props ) => {
     switch ( props.elementType ) {
         case ( 'input' ):
             inputElement = <input
+                data-testid={props.elementId}
                 className={inputClasses.join(' ')}
                 {...props.elementConfig}
                 value={props.value}
@@ -26,6 +27,7 @@ const input = ( props ) => {
         case ( 'select' ):
             inputElement = (
                 <select
+                    data-testid={props.elementId}
                     className={inputClasses.join(' ')}
                     value={props.value}
                     onChange={props.changed}>
