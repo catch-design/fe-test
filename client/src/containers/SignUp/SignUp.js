@@ -107,7 +107,7 @@ class SignUp extends Component {
             formIsValid = updatedSignupForm[inputIdentifier].valid && formIsValid;
         }
 
-        this.setState({signupForm: updatedSignupForm, formIsValid: true});
+        this.setState({signupForm: updatedSignupForm, formIsValid: formIsValid});
     };
 
 
