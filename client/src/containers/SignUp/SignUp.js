@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { cities } from '../../models/cities';
 import Input from '../../components/UI/Input/Input';
 import Button from '../../components/UI/Button/Button';
+import Spinner from '../../components/UI/Spinner/Spinner';
 import Wrapper from '../../hoc/Wrapper/Wrapper';
 import classes from './SignUp.scss';
 import mainStyle from '../../main.scss';
@@ -64,7 +65,8 @@ class SignUp extends Component {
                 value: cities[0].name
             }
         },
-        formIsValid: false
+        formIsValid: false,
+        loading: false
     };
 
     checkValidity(value, rules) {
@@ -127,7 +129,7 @@ class SignUp extends Component {
     };
 
     callApi = (submitObject) => {
-
+        this.setState({...this.state, loading: true});
     };
 
 
@@ -159,7 +161,7 @@ class SignUp extends Component {
             <Button elementId="signupFormSubmitButton" clicked={this.submitHandler} key="submitButton" disabled={!this.state.formIsValid}>Submit</Button>
         ];
 
-        if ( this.props.loading ) {
+        if ( this.state.loading ) {
             form = <Spinner />;
         }
         return (
