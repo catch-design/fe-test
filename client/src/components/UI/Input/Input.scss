@@ -27,10 +27,6 @@
   &.invalid {
     border: 1px solid red;
   }
-
-  /**
-  Sorry for this non-BEM notation, but React didn't like the signupform__inputelement--invalid classname
-   */
 }
 
 .signupform__inputelement:focus {

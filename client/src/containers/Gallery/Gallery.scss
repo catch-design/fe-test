@@ -30,11 +30,11 @@
   overflow-y: hidden;
   white-space: nowrap;
   padding-bottom: 30px;
-  box-sizing: content-box; /* So the width will be 100% + 17px */
+  box-sizing: content-box;
 }
 
 .gallery__scrollcontainer{
   height: 178px;
   overflow: hidden;
-  max-width: 780px;
+  max-width: px;
 }
