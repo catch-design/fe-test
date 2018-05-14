@@ -8,7 +8,15 @@ npm install
 
 npm start
 
-3. to start production build (dist)
+3. to run tests install first global module jsDom for fully rendering components
+
+npm install jsdom
+
+to run test:
+
+npm run tests
+
+4. to start production build (dist)
 
 npm run build
 

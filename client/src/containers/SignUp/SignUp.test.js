@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SignUp from './SignUp';
+import Input from '../../components/UI/Input/Input';
 import {configure, mount, shallow} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import toJson from 'enzyme-to-json';
@@ -26,6 +27,15 @@ describe('<Form />', () => {
         expect(lastNameInput.props().value).toBe('van User');
         expect(emaiIInput.props().value).toBe('test@gmail.com');
         expect(cityInput.props().value).toBe('Auckland');
+        wrapper.unmount();
+    });
+
+    test('email validation', () => {
+        const wrapper = mount(<SignUp/>);
+        updateInput(wrapper, '[data-testid="email"]', 'test');
+        expect(wrapper.state().signupForm.email.valid).toBe(false);
+        updateInput(wrapper, '[data-testid="email"]', 'test@test.com');
+        expect(wrapper.state().signupForm.email.valid).toBe(true);
         wrapper.unmount();
     });
 
