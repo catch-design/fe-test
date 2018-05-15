@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import SignUp from './SignUp';
 import Input from '../../components/UI/Input/Input';
 import {configure, mount, shallow} from 'enzyme';
@@ -30,14 +29,17 @@ describe('<Form />', () => {
         wrapper.unmount();
     });
 
-    test('email validation', () => {
+    it('email validation', () => {
         const wrapper = mount(<SignUp/>);
         updateInput(wrapper, '[data-testid="email"]', 'test');
         expect(wrapper.state().signupForm.email.valid).toBe(false);
+        expect(wrapper.find(Input).get(2).props.invalid).toBe(true);
         updateInput(wrapper, '[data-testid="email"]', 'test@test.com');
         expect(wrapper.state().signupForm.email.valid).toBe(true);
+        expect(wrapper.find(Input).get(2).props.invalid).toBe(false);
         wrapper.unmount();
     });
+
 
     test('user submits the form', () => {
         const wrapper = mount(<SignUp/>);
@@ -64,3 +66,6 @@ describe('<Form />', () => {
         expect(toJson(wrapper)).toMatchSnapshot();
     });
 });
+
+
+
