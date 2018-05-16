@@ -24,35 +24,6 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.css$/,
-                exclude: /node_modules/,
-                use: [
-                    {loader: 'style-loader'},
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            importLoaders: 1,
-                            modules: true,
-                            localIdentName: '[local]'
-                        }
-                    },
-                    {
-                        loader: 'postcss-loader',
-                        options: {
-                            ident: 'post-css',
-                            plugins: () =>[
-                                autoprefixer({
-                                    browsers: [
-                                        "> 1%",
-                                        "last 2 versions"
-                                    ]
-                                })
-                            ]
-                        }
-                    }
-                ],
-            },
-            {
                 test: /\.scss$/,
                 use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
                     use: [
@@ -62,7 +33,7 @@ module.exports = {
                                 modules: true,
                                 sourceMap: false,
                                 importLoaders: 2,
-                                localIdentName: '[name]__[local]___[hash:base64:5]'
+                                localIdentName: '[local]'
                             }
                         },
                         'sass-loader'

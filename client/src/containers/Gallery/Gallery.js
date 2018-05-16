@@ -34,7 +34,52 @@ class Gallery extends Component {
                     alt: 'Sunset hills'
                 }
             },
-        ]
+        ],
+        dragging: false,
+        rel: {
+            x: 0,
+            y: 0
+        },
+        pos: {
+            x: 0,
+            y: 0
+        }
+    };
+
+    onMouseDown = (e) => {
+        document.addEventListener('mousemove', this.onMouseMove);
+        document.addEventListener('mouseup', this.onMouseUp);
+
+        this.setState({
+            pos:{
+                x: e.pageX,
+                y: e.pageY
+            },
+            dragging: true});
+    };
+
+    onMouseUp = (e) => {
+        document.removeEventListener('mousemove', this.onMouseMove);
+        document.removeEventListener('mouseup', this.onMouseUp);
+        this.setState({
+            dragging: false});
+    };
+
+    onMouseMove = (e) => {
+        if (!this.state.dragging) return;
+        this.setState({
+            rel: {
+                x: e.pageX - this.state.pos.x,
+                y: e.pageY - this.state.pos.y
+            },
+            pos:{
+                x: e.pageX,
+                y: e.pageY
+            }
+        });
+        this._scroller.scrollLeft  = this._scroller.scrollLeft - this.state.rel.x;
+        e.stopPropagation();
+        e.preventDefault();
     };
 
     render() {
@@ -45,11 +90,9 @@ class Gallery extends Component {
                     image={item.image}
                 />
             }): null;
-
-
         return (
-            <div className={classes.gallery__scrollcontainer}>
-                <div className={classes.gallery__contentcontainer}>
+            <div className={classes.gallery__scrollcontainer} >
+                <div className={classes.gallery__contentcontainer} onMouseDown={this.onMouseDown.bind(this)} ref={(ref) => this._scroller = ref}>
                     {galleryItems}
                 </div>
             </div>

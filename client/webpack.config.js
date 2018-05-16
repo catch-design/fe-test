@@ -22,27 +22,6 @@ module.exports = {
                 loader: 'babel-loader',
                 exclude: /node_modules/
             },
-            // "postcss" loader applies autoprefixer to our CSS.
-            // "css" loader resolves paths in CSS and adds assets as dependencies.
-            // "style" loader turns CSS into JS modules that inject <style> tags.
-            // In production, we use a plugin to extract that CSS to a file, but
-            // in development "style" loader enables hot editing of CSS.
-            {
-                test: /\.css$/,
-                use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                modules: true,
-                                localIdentName: '[name]__[local]___[hash:base64:5]'
-                            }
-                        },
-                        'postcss-loader'
-                    ]
-                }))
-            },
             {
                 test: /\.scss$/,
                 use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({

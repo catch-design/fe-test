@@ -15,6 +15,8 @@ const input = ( props ) => {
         inputClasses.push(classes.invalid);
     }
 
+
+
     switch ( props.elementType ) {
         case ( 'input' ):
             inputElement = <input
