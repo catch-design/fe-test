@@ -37,12 +37,10 @@ class Gallery extends Component {
         ],
         dragging: false,
         rel: {
-            x: 0,
-            y: 0
+            x: 0
         },
         pos: {
-            x: 0,
-            y: 0
+            x: 0
         }
     };
 
@@ -52,8 +50,7 @@ class Gallery extends Component {
 
         this.setState({
             pos:{
-                x: e.pageX,
-                y: e.pageY
+                x: e.pageX
             },
             dragging: true});
     };
@@ -69,12 +66,10 @@ class Gallery extends Component {
         if (!this.state.dragging) return;
         this.setState({
             rel: {
-                x: e.pageX - this.state.pos.x,
-                y: e.pageY - this.state.pos.y
+                x: e.pageX - this.state.pos.x
             },
             pos:{
-                x: e.pageX,
-                y: e.pageY
+                x: e.pageX
             }
         });
         this._scroller.scrollLeft  = this._scroller.scrollLeft - this.state.rel.x;
