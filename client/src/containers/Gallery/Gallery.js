@@ -41,7 +41,8 @@ class Gallery extends Component {
         },
         pos: {
             x: 0
-        }
+        },
+        scrollLeft: 0
     };
 
     onMouseDown = (e) => {
@@ -49,17 +50,19 @@ class Gallery extends Component {
         document.addEventListener('mouseup', this.onMouseUp);
 
         this.setState({
-            pos:{
+            pos: {
                 x: e.pageX
             },
-            dragging: true});
+            dragging: true
+        });
     };
 
     onMouseUp = (e) => {
         document.removeEventListener('mousemove', this.onMouseMove);
         document.removeEventListener('mouseup', this.onMouseUp);
         this.setState({
-            dragging: false});
+            dragging: false
+        });
     };
 
     onMouseMove = (e) => {
@@ -68,14 +71,16 @@ class Gallery extends Component {
             rel: {
                 x: e.pageX - this.state.pos.x
             },
-            pos:{
+            pos: {
                 x: e.pageX
-            }
+            },
+            scrollLeft: this._scroller.scrollLeft - this.state.rel.x
         });
-        this._scroller.scrollLeft  = this._scroller.scrollLeft - this.state.rel.x;
+
         e.stopPropagation();
         e.preventDefault();
     };
+
 
     render() {
         let galleryItems = this.state.galleryItems.length > 0 ? this.state.galleryItems.map((item, index) => {
@@ -84,16 +89,25 @@ class Gallery extends Component {
                     title={item.title}
                     image={item.image}
                 />
-            }): null;
+            }) : null;
+
+        if (this.state.dragging) {
+            this._scroller.scrollLeft = this.state.scrollLeft;
+        }
+
+
         return (
-            <div className={classes.gallery__scrollcontainer} >
-                <div className={classes.gallery__contentcontainer} onMouseDown={this.onMouseDown.bind(this)} ref={(ref) => this._scroller = ref}>
+            <div className={classes.gallery__scrollcontainer}>
+                <div className={classes.gallery__contentcontainer}
+                     onMouseDown={this.onMouseDown.bind(this)}
+                     ref={(ref) => this._scroller = ref}>
                     {galleryItems}
                 </div>
             </div>
 
         )
     }
-};
+}
+;
 
 export default Gallery;
