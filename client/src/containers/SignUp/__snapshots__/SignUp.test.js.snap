@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> matches saved snapshot 1`] = `
+<wrapper>
+  <div
+    className=" "
+  >
+    <form
+      key="form"
+    >
+      <input
+        changed={[Function]}
+        elementConfig={
+          Object {
+            "placeholder": "First name",
+            "type": "text",
+          }
+        }
+        elementId="firstName"
+        elementType="input"
+        invalid={true}
+        key="firstName"
+        shouldValidate={
+          Object {
+            "required": true,
+          }
+        }
+        touched={false}
+        value=""
+      />
+      <input
+        changed={[Function]}
+        elementConfig={
+          Object {
+            "placeholder": "Last name",
+            "type": "text",
+          }
+        }
+        elementId="lastName"
+        elementType="input"
+        invalid={true}
+        key="lastName"
+        shouldValidate={
+          Object {
+            "required": true,
+          }
+        }
+        touched={false}
+        value=""
+      />
+      <input
+        changed={[Function]}
+        elementConfig={
+          Object {
+            "placeholder": "Email address",
+            "type": "email",
+          }
+        }
+        elementId="email"
+        elementType="input"
+        invalid={true}
+        key="email"
+        shouldValidate={
+          Object {
+            "isEmail": true,
+            "required": true,
+          }
+        }
+        touched={false}
+        value=""
+      />
+      <input
+        changed={[Function]}
+        elementConfig={
+          Object {
+            "options": Array [
+              Object {
+                "name": "Auckland",
+                "value": "1",
+              },
+              Object {
+                "name": "Christchurch",
+                "value": "2",
+              },
+              Object {
+                "name": "Dunedin",
+                "value": "3",
+              },
+              Object {
+                "name": "Gisborne",
+                "value": "4",
+              },
+              Object {
+                "name": "Hamilton",
+                "value": "5",
+              },
+              Object {
+                "name": "Invercargill",
+                "value": "6",
+              },
+              Object {
+                "name": "Napier-Hastings",
+                "value": "7",
+              },
+              Object {
+                "name": "Nelson",
+                "value": "8",
+              },
+              Object {
+                "name": "New Plymouth",
+                "value": "9",
+              },
+              Object {
+                "name": "Palmerston North	",
+                "value": "10",
+              },
+              Object {
+                "name": "Rotorua",
+                "value": "11",
+              },
+              Object {
+                "name": "Tauranga",
+                "value": "12",
+              },
+              Object {
+                "name": "Wellington",
+                "value": "13",
+              },
+              Object {
+                "name": "Whanganui",
+                "value": "14",
+              },
+              Object {
+                "name": "Whangarei",
+                "value": "15",
+              },
+            ],
+            "placeholder": "City",
+            "type": "select",
+          }
+        }
+        elementId="city"
+        elementType="select"
+        invalid={false}
+        key="city"
+        shouldValidate={
+          Object {
+            "required": true,
+          }
+        }
+        value="Auckland"
+      />
+    </form>
+    <button
+      clicked={[Function]}
+      disabled={true}
+      elementId="signupFormSubmitButton"
+      key="submitButton"
+    >
+      Submit
+    </button>
+  </div>
+</wrapper>
+`;

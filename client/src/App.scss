@@ -1,0 +1,11 @@
+@import './main';
+
+@media screen and (max-width: 320px){
+  .homepage__container{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+}

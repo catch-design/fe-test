@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+}
+
+.h1 {
+  font-size: 22pt;
+}
+
+a {
+  cursor: pointer;
+}
+
+/** grid classes & variables **/
+
+.grid__container {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 639px) {
+  .col-8-12{
+    width: 75%;
+  }
+
+  .col-4-8{
+    width: 50%;
+  }
+
+  .col-5-8{
+    width: 62.5%;
+  }
+
+  .col-3-8{
+    width: 37.5%;
+  }
+
+  .col-4-5{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .col-8-12,
+  .col-4-8,
+  .col-5-8,
+  .col-3-8,
+  .col-4-5{
+    width: 100%;
+  }
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/** variables & extends **/
+
+$default-blue: #008FFF;
+$default-text-color: #697B95;
+
+%content-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: $default-text-color;
+  letter-spacing: 0.23px;
+  line-height: 18px;
+}
+
+%default-copy {
+  font-size: 14px;
+  color: $default-text-color;
+  letter-spacing: 0.23px;
+  line-height: 18px;
+}
+
+%default-link {
+  font-size: 14px;
+  color: $default-blue;
+  letter-spacing: 0.23px;
+  line-height: 18px;
+
+  &:hover {
+    font-size: 14px;
+    color: $default-text-color;
+    letter-spacing: 0.23px;
+    line-height: 18px;
+  }
+}

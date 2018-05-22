@@ -1,0 +1,68 @@
+@import '../../../main';
+
+@media screen and (min-width: 640px) {
+  .catalogue__card {
+    display: inline-block;
+    margin: 0 0 42px 0;
+
+    &:nth-child(odd) {
+      padding-right: 15px;
+    }
+
+    &:nth-child(even) {
+      padding-left: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .catalogue__card {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0 0 24px 0;
+  }
+}
+
+.catalogue__cardcontentholder {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+}
+
+.catalogue__cardimageholder {
+  height: auto;
+  margin: 0;
+  width: 100%;
+}
+
+.catalogue__cardimage {
+  width: 100%;
+  height: auto;
+  border: 1px solid #E0E6ED;
+  border-radius: 5px;
+}
+
+.catalogue__cardtitle {
+  @extend %content-title;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.catalogue__carddescription {
+  @extend %default-copy;
+  margin-top: 9px;
+}
+
+.catalogue__cardlink {
+  @extend %default-link;
+}
+
+
+
+
+
+
+

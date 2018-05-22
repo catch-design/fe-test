@@ -1,0 +1,25 @@
+.signup__button {
+    margin: 24px 0;
+    background-color: #76E691;
+    border: 1px solid #53B16A;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    max-width: 270px;
+    width: 100%;
+    letter-spacing: 0.23px;
+
+    &:hover{
+        background: #53B16A;
+    }
+}
+
+.signup__button:disabled {
+    cursor: not-allowed;
+}
