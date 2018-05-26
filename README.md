@@ -74,7 +74,7 @@ The application is composed of the following components:
 
     button - button component
 
-    separator - dashline which can be used across the app to separate components
+    separator - dashline which can be used across the app to separate components/blocks visually
 
     adventures - the component that manages state for Adventures and all child components (adventureList and adventureCard).
     it's also connecting to AdventureService and getting adventure data
