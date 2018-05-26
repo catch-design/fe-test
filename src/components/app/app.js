@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../header/header';
 import Separator from '../separator/separator';
-import Adventures from '../adventures/adventures';
+import Asset from '../asset/asset';
 import './app.scss';
 
 export default class App extends Component {
@@ -19,8 +19,8 @@ export default class App extends Component {
             <div className="container">
                 <Header title={this.state.title} />
                 <Separator />
-                <div className="test">
-                    <Adventures />
+                <div className="assets">
+                    <Asset />
                 </div>
             </div>
         );
