@@ -1,0 +1,8 @@
+@import '../../theme/shared/shared.scss';
+
+.footer {
+    width: 100%;
+    height: 351px;
+    background: $color-light-grey;
+    box-shadow: inset 0 1px 1px -1px $color-dark-grey;
+}

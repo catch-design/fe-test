@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Header from '../header/header';
 import Separator from '../separator/separator';
 import Asset from '../asset/asset';
+import Footer from '../footer/footer';
 import './app.scss';
 
 export default class App extends Component {
@@ -16,13 +17,18 @@ export default class App extends Component {
 
     render() {
         return (
-            <div className="container">
-                <Header title={this.state.title} />
-                <Separator />
-                <div className="assets">
-                    <Asset />
+            <Fragment>
+                <div className="container">
+                    <div className="container__inner">
+                        <Header title={this.state.title} />
+                        <Separator />
+                        <div className="assets">
+                            <Asset />
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <Footer />
+            </Fragment>
         );
     }
 }
