@@ -31,3 +31,11 @@
         }
     }
 }
+
+// TODO check if it's only one possibility to centralize the sharebar
+@media screen and (max-width: $max-mobile-page-width) {
+    .sharebar {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}

@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AssetCard from '../assetCard/assetCard';
-import './assetList.scss';
 
 const getAssets = (adventures) => {
     return (
