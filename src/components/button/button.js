@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './button.scss';
 
 const Button = (props) => (
-    <div className="button">{props.caption}</div>
+    <button className="button button--submit">{props.caption}</button>
 );
 
 Button.defaultProps = {

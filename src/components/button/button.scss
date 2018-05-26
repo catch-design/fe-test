@@ -1,5 +1,19 @@
+@import '../../theme/shared/shared.scss';
+
 .button {
-    background: red;
-    height: 200px;
-    width: 200px;
+    min-width: 270px;
+    border-radius: $base-border-radius;
+    padding: 15px 10px; 
+    font-size: $base-font-size;
+    text-align: center;
+    
+    &--submit {
+        background: $color-light-green;
+        border: 1px solid $color-dark-green;
+        color: $color-white;
+    }
+
+    &:hover {
+        background-color: $color-dark-green;
+    }
 }
