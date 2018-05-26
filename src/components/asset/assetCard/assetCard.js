@@ -7,9 +7,9 @@ const assetCard = (props) => (
         <div className="card__layout">
             <img className="card__image" src={props.adventure.imageUrl} alt="" />
             <div className="card__detail">
-                <h4 className="card__title">{props.adventure.title}</h4>
+                <h3 className="card__title">{props.adventure.title}</h3>
                 <p className="card__description">{props.adventure.description}</p>
-                <a className="card__more" href="javascript:;">Read more</a>
+                <a className="card__more" href="javascript:;">{props.adventure.readMore}</a>
             </div>
         </div>
     </div>

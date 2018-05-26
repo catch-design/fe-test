@@ -2,13 +2,15 @@
     {
         "id": 1,
         "title": "Pink & Purple Sunset",
-        "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper.",
-        "imageUrl": "../images/mountain.png"
+        "description": "Some mountains are caused by volcanoes spewing lava over and over again.",
+        "imageUrl": "../images/mountain.png",
+        "readMore": "Go to the sunset" 
     },
     {
         "id": 2,
         "title": "Sublime Trees",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet…",
-        "imageUrl": "../images/palms.png"
+        "description": "There are over 2,500 species of palm trees, but not all plants called 'palms' are trees or even palms",
+        "imageUrl": "../images/palms.png",
+        "readMore": "View some more"
     }
 ]
