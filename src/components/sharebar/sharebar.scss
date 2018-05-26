@@ -1,0 +1,33 @@
+@import '../../theme/shared/shared.scss';
+
+.sharebar {
+    list-style: none;
+    display: flex;
+    max-width: 145px;
+    padding: 0;
+    justify-content: space-between;
+
+    &__button {
+        display: block;
+        width: 39px;
+        height: 39px;
+        outline: none;
+        opacity: 1;
+        transition: opacity .25s ease-in-out;
+        
+        // hide text if we have icons loaded
+        color: transparent;
+        font: 0/0 a;
+        text-shadow: none;
+
+        &--facebook {
+            background: url('./icons/icon-facebook.svg') no-repeat;
+        }
+        &--instagram {
+            background: url('./icons/icon-instagram.svg') no-repeat;
+        }
+        &--youtube {
+            background: url('./icons/icon-youtube.svg') no-repeat;
+        }
+    }
+}
