@@ -104,12 +104,12 @@ This project is set up with [`eslint`](http://eslint.org/) configuration, for it
 
 TODO:
 * clean styles from time to time, remove duplication, do review
-* descrive mediaQuery logic in readme and choosen viewports (review class names)
+* describe mediaQuery logic in readme and choosen viewports (review class names)
 * check how assets works with different line numbers of description
 * add assets in storybook
 * create a form component
-* create a footer component with childs, apply media query
 * create a gallery component
 * check that all components in storybook
 * add as much comments as possible and needed
 * sticky footer
+* add explanation about mobile viewport
