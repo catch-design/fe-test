@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Pink & Purple Sunset",
+        "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper.",
+        "imageUrl": "../images/mountain.png"
+    },
+    {
+        "id": 2,
+        "title": "Sublime Trees",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet…",
+        "imageUrl": "../images/palms.png"
+    }
+]

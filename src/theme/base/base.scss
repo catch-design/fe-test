@@ -1,0 +1,37 @@
+@import './variables.scss';
+
+html {
+    box-sizing: border-box;
+    font-family: $base-font-family;
+    font-weight: $base-font-weight;
+    font-size: $base-font-size;
+    text-align: $base-text-align;
+    min-height: 100%;
+    color: $base-color;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: $color-white;
+    color: $color-neutral-primary;
+    height: 100%;
+}
+
+p {
+    margin: 0 0 0.7rem;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+button, input, select, textarea {
+    font-family: $base-font-family;
+}

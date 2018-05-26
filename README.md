@@ -92,12 +92,6 @@ The application is composed of the following components:
 
 Styles are found in the `./src/components/theme` directory. They are written in [SASS](http://sass-lang.com/).
 
-There are base styles and shared styles.
-
-Shared styles are preferred - they contain mixins, variables - things that don't actually give us CSS if generated. These are pulled into each component's `.scss` file.
-
-Base styles are global classes (utility classes, typography, icons).
-
 -----
 # Linting
 
