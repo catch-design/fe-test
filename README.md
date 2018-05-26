@@ -7,6 +7,7 @@ A front-end test of sorts is a [React](https://facebook.github.io/react/) applic
 
 * [Installation](#markdown-header-installation)
 * [Usage](#markdown-header-usage)
+* [Storybook](#markdown-header-storybook)
 * [Code](#markdown-header-code)
 * [Style](#markdown-header-style)
 * [Linting](#markdown-header-linting)
@@ -49,6 +50,16 @@ npm install
 
     // husky precommit which will not let us make a commit if we have linting errors in our case
     "precommit": "npm test:lint"
+
+-----
+# Storybook
+
+I use [storybook](https://github.com/storybooks/storybook) to serve up pattern library which demonstrates the usage of components, both individually and composed as children of other components.
+
+Storybook can be started and accessed via:
+
+    // The following will serve storybook at http://localhost:9001
+    npm run storybook
 
 -----
 # Code
