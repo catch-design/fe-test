@@ -1,0 +1,42 @@
+[
+  {
+    "Device Name":"iPad Air",
+    "Platform":"iOS",
+    "OS Version":"7.0.3",
+    "Portrait Width":"768",
+    "Landscape Width":"1024",
+    "Release Date":"2013-10"
+  },
+  {
+    "Device Name":"iPhone 5",
+    "Platform":"iOS",
+    "OS Version":"6.0",
+    "Portrait Width":"320",
+    "Landscape Width":"568",
+    "Release Date":"2012-09"
+  },
+  {
+    "Device Name":"iPhone 6",
+    "Platform":"iOS",
+    "OS Version":"8.0",
+    "Portrait Width":"375",
+    "Landscape Width":"667",
+    "Release Date":"2014-09"
+  },
+  {
+    "Device Name":"iPhone 6 Plus",
+    "Platform":"iOS",
+    "OS Version":"8.0",
+    "Portrait Width":"414",
+    "Landscape Width":"736",
+    "Release Date":"2014-09"
+  },
+  {
+    "Device Name":"Samsung Galaxy S4",
+    "Platform":"Android",
+    "OS Version":"4.2.2",
+    "Portrait Width":"360",
+    "Landscape Width":"640",
+    "Release Date":"2013-04"
+  }
+]
