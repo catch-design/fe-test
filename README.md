@@ -112,3 +112,4 @@ TODO:
 * create a gallery component
 * check that all components in storybook
 * add as much comments as possible and needed
+* sticky footer

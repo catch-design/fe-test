@@ -42,6 +42,16 @@ module.exports = (storybookBaseConfig, configType) => {
     ],
     include: path.resolve(__dirname, "../"),
     exclude: /node_modules/
+  }, {
+    test: /\.(jpe?g|png|svg)$/,
+    use: [
+        {
+            loader: 'url-loader',
+            options: {
+                limit: 100000
+            }
+        }
+    ]
   });
 
   // Return the altered config
