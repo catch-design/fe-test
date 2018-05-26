@@ -1,0 +1,42 @@
+@import './variables.scss';
+
+@media screen and (max-width: $max-mobile-page-width) {
+    .column {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: $min-desktop-page-width) {
+    .column {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        width:100%;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+
+        &:first-child {
+            margin-right: 30px;
+        }
+    }
+}
+
+

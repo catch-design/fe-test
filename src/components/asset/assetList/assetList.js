@@ -5,7 +5,7 @@ import './assetList.scss';
 
 const getAssets = (adventures) => {
     return (
-        <div className="list">
+        <div className="list column">
             {
                 adventures.map(adventure => 
                     <AssetCard key={adventure.id} adventure={adventure} />

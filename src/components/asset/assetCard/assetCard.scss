@@ -1,6 +1,8 @@
 @import '../../../theme/shared/shared.scss';
 
 .card {
-    float: left;
-    width: 370px;
+    &__image {
+        width: 100%;
+        max-height: 100%;
+    }   
 }
