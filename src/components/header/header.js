@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './header.scss';
 
 const Header = (props) => (
-    <div className="header" href="/">{props.title}</div>
+    <h1 className="header" href="/">{props.title}</h1>
 );
 
 Header.defaultProps = {
