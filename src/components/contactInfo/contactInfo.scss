@@ -1,0 +1,20 @@
+@import '../../theme/shared/shared.scss';
+
+.contact {
+    &__title {
+        font-weight: $base-bold-font-weight;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: $max-mobile-page-width) {
+    .column {
+        text-align: center;
+    }
+    .row {
+        text-align: center;
+    }
+}
+
+
