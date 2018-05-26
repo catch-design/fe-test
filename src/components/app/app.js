@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../header/header';
-import Button from '../button/button';
-import Adventures from '../adventure/adventures';
+import Separator from '../separator/separator';
+import Adventures from '../adventures/adventures';
 import './app.scss';
 
 export default class App extends Component {
@@ -10,19 +10,16 @@ export default class App extends Component {
         super();
 
         this.state = {
-            title: 'A front-end test of sorts',
-            caption: 'Submit'
+            title: 'A front-end test of sorts'
         };
     }
 
     render() {
         return (
-            <div>
+            <div className="container">
                 <Header title={this.state.title} />
-                <div>
-                    <Button caption={this.state.caption} />
-                </div>
-                <div className="mt-5">
+                <Separator />
+                <div className="test">
                     <Adventures />
                 </div>
             </div>
