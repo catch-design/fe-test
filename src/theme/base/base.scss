@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import '../shared/variables.scss';
 
 html {
     box-sizing: border-box;
@@ -23,7 +23,7 @@ body {
 }
 
 p {
-    margin: 0 0 0.7rem;
+    margin: 0 0 1.125rem;
     padding: 0;
 }
 
