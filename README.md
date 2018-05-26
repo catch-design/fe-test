@@ -5,12 +5,12 @@ A front-end test of sorts is a [React](https://facebook.github.io/react/) applic
 
 # Contents
 
-* [Installation](#markdown-header-installation)
-* [Usage](#markdown-header-usage)
-* [Storybook](#markdown-header-storybook)
-* [Code](#markdown-header-code)
-* [Style](#markdown-header-style)
-* [Linting](#markdown-header-linting)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Storybook](#storybook)
+* [Code](#code)
+* [Style](#style)
+* [Linting](#linting)
 
 -----
 # Installation
@@ -83,9 +83,9 @@ The application is composed of the following components:
 
     adventureCard - Represents a single instance of a adventure
 
-    gallery - carousel
+    gallery - a carousel gallery
 
-    footer - the component that contains child components such as sharebar, copyright, contactInfo
+    footer - the component that contains child components such as sharebar, copyright and contactInfo
 
 -----
 # Style
