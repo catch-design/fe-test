@@ -102,14 +102,19 @@ npm run lint
 This project is set up with [`eslint`](http://eslint.org/) configuration, for its better handling of React's JSX. Your IDE should have an `eslint` plugin or module, or you can run it from the commandline.
 
 
-TODO:
+TODO - Styles:
 * clean styles from time to time, remove duplication, do review
+* use em instead of px
 * describe mediaQuery logic in readme and choosen viewports (review class names)
 * check how assets works with different line numbers of description
-* add assets in storybook
-* create a form component
-* create a gallery component
-* check that all components in storybook
-* add as much comments as possible and needed
 * sticky footer
 * add explanation about mobile viewport
+
+TODO - Storybook:
+* add assets in storybook
+* check that all components in storybook
+
+TODO - general
+* add as much comments as possible and needed
+* create a form component
+* create a gallery component
