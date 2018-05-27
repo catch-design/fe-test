@@ -69,24 +69,24 @@ Application code is found in the `./src` directory.
 
 The application is composed of the following components:
 
-    * header - the application title
+* header - the application title
 
-    * form - the contact form for a user which connects with CityService to get data for a list of cities
+* form - the contact form for a user which connects with CityService to get data for a list of cities
 
-    * button component
+* button component
 
-    * separator - dashline which can be used across the app to separate components/blocks visually
+* separator - dashline which can be used across the app to separate components/blocks visually
 
-    * assets - the component that manages state for an asset and all child components (assetList and assetCard).
-    it's also connecting to AssetService and getting adventure data
+* assets - the component that manages state for an asset and all child components (assetList and assetCard).
+it's also connecting to AssetService and getting adventure data
 
-    * assetList - list of adventures
+* assetList - list of adventures
 
-    * assetCard - represents a single instance of an adventure
+* assetCard - represents a single instance of an adventure
 
-    * gallery - the simple comonent to represent a gallery (works with scrolling on desktop/mobile). It have a connection to GalleryService to get images.
+* gallery - the simple comonent to represent a gallery (works with scrolling on desktop/mobile). It have a connection to GalleryService to get images.
 
-    * footer - the component that contains child components such as sharebar, copyright and contactInfo.
+* footer - the component that contains child components such as sharebar, copyright and contactInfo.
 
 ## Media Queries
 One of the requrements includes a different view for mobile and desktop which has been achieved with using media queries:
@@ -109,18 +109,3 @@ npm run test:lint
 ```
 
 This project is set up with [`eslint`](http://eslint.org/) configuration, for its better handling of React's JSX. Your IDE should have an `eslint` plugin or module, or you can run it from the commandline.
-
-
-TODO - Styles:
-* clean styles from time to time, remove duplication, do review
-* use em instead of px if needed
-* review classNames
-* check how assets works with different line numbers of description
-* sticky footer
-* form component need more style for select
-
-TODO - Storybook:
-* check that all components in storybook
-
-TODO - general
-* add as much comments as possible and needed

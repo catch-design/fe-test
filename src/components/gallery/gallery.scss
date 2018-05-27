@@ -8,7 +8,7 @@
     &::-webkit-scrollbar {
       display: none;
     }
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch; // smoothly scroll images on iOS Safari 
 
     &__image {
         height: 174px;

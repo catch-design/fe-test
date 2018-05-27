@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './gallery.scss';
 import GalleryService from '../../services/gallery/galleryService';
+import './gallery.scss';
 
 export default class Gallery extends Component {
-
+    
     constructor() {
         super();
 
