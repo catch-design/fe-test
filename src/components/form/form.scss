@@ -28,14 +28,31 @@
         }
 
         &--select {
-            height:48px;
             background: transparent;
+
+            appearance: none;
+            // The select element is set to required
+            // as long as the selected options value
+            // is empty the element is not valid.
+            &:invalid {
+              color: gray;
+            }
+            
+            // Styling for browsers which do support
+            // styling select option elements directly
+            [disabled] {
+              color: gray;
+            }
         }
+    }
+
+    &__select-option {
+        color: gray;
     }
 
     // TODO: make icon css, add action on hover (transition)
     &__styled-select {
-        background: url('images/down-arrow-select.svg') no-repeat 98%;
+        background: url('images/down-arrow-select.svg') no-repeat 97%;
 
         &:hover {
             cursor: pointer;

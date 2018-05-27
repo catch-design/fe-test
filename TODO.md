@@ -7,7 +7,6 @@
 * review classNames
 * check how assets works with different line numbers of description
 * sticky footer
-* form component need more style for select
 
 ## Storybook
 

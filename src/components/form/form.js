@@ -38,8 +38,8 @@ export default class Form extends Component {
                                 <input className="form__field" type="text" name="email" placeholder="Email adress" />
                             </div>
                             <div className="form__styled-select row">
-                                <select className="form__field form__field--select" name="city">
-                                    <option className="form__select-option" value="hide" disabled selected>City</option>
+                                <select className="form__field form__field--select" name="city" required>
+                                    <option className="form__select-option" value="" disabled selected>City</option>
                                     {
                                         this.state.cities.map(city=>
                                             <option key={city.id} value={city.title}>{city.title}</option>                                       
