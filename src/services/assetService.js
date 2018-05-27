@@ -1,4 +1,4 @@
-import adventure from './adventure.json';
+import adventure from './adventures.json';
 
 export default class AssetService {
     static getAssets() {

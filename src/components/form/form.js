@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from '../button/button';
 import './form.scss';
-// import AssetService from '../../services/assetService';
+import CityService from '../../services/cityService';
 
 export default class Form extends Component {
 
@@ -13,15 +13,15 @@ export default class Form extends Component {
             caption: 'Submit'
         };
 
-        // this.state = {
-        //     adventures: []
-        // };
+        this.state = {
+            cities: []
+        };
     }
 
     componentDidMount() {
-        // this.setState(() => ({ adventures: AssetService.getAssets() }));
+        this.setState(() => ({ cities: CityService.getCities() }));
     }
-
+    // TODO: can be made with template to avoid repetition
     render() {
         return (
             <div className="form">
@@ -30,18 +30,25 @@ export default class Form extends Component {
                     <div className="form__container">
                         <div className="form__inner column">
                             <div className="row">
-                                <input className="form__input" type="text" name="name" placeholder="First Name" />
+                                <input className="form__field" type="text" name="name" placeholder="First Name" />
                             </div>
                             <div className="row">
-                                <input className="form__input" type="text" name="surname" placeholder="Last Name" />
+                                <input className="form__field" type="text" name="surname" placeholder="Last Name" />
                             </div>
                         </div>
                         <div className="form__inner column">
                             <div className="row">
-                                <input className="form__input" type="text" name="email" placeholder="Email adress" />
+                                <input className="form__field" type="text" name="email" placeholder="Email adress" />
                             </div>
                             <div className="row">
-                                <input className="form__input" type="text" name="city" placeholder="City" />
+                                <select className="form__field form__field--select" name="city">
+                                    <option className="form__select-option" value=""disabled selected>City</option>
+                                    {
+                                        this.state.cities.map(city=>
+                                            <option key={city.id} value={city.title}>{city.title}</option>                                       
+                                        )
+                                    }
+                                </select>
                             </div>
                         </div>
                     </div>

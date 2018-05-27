@@ -17,8 +17,8 @@
         margin-bottom: 20px;
     }
 
-    &__input {
-        // min-width: 370px;
+    &__field {
+        color: $color-light-blue;
         padding: 15px;
         width: 100%;
         border: 1px solid $color-dark-grey;
@@ -27,6 +27,15 @@
         &:focus {
             border-color: $color-light-blue;
         }
+
+        &--select {
+            // review style
+            height:48px;
+        }
+    }
+
+    &__select-option {
+        color: $color-neutral-primary;
     }
 
     &__button {
@@ -36,7 +45,7 @@
 
 @media screen and (max-width: $max-mobile-page-width) {
     .form {
-        &__input {
+        &__field {
             width: 100%;
         }
     }
