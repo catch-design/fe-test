@@ -1,3 +1,5 @@
+@import '../../theme/shared/shared.scss';
+
 .gallery {
     width: 100%;
     overflow: hidden;
@@ -15,11 +17,13 @@
     &__image {
         height: 174px;
         width: 236px;
-        font-size: 25px;
-        background: blue;
-        margin: 10px;
+        border-radius: $base-border-radius;
+        margin-right: 10px;
         display: inline-block;
-        line-height: 100px; 
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 

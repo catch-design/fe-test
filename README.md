@@ -99,7 +99,7 @@ Notice that a viewport size has not been discussed, so the size is using here - 
 -----
 # Style
 
-Styles are found in the `./src/components/theme` directory. They are written in [SASS](http://sass-lang.com/).
+Styles are found in the `./src/components/theme` directory. They are written in [SASS](http://sass-lang.com/). Classes is structured with [BEM](http://getbem.com/) methodology.
 
 -----
 # Linting

@@ -23,12 +23,18 @@ export default class App extends Component {
                 <div className="container">
                     <div className="container__inner">
                         <Header title={this.state.title} />
-                        <Form />
-                        <Separator />
-                        <div className="assets">
+                        <div className="container__layout">
+                            <Form />
+                        </div>
+                        <div className="container__layout">
+                            <Separator />
+                        </div>
+                        <div className="container__layout container__layout--small">
                             <Asset />
                         </div>
-                        <Gallery />
+                        <div className="container__layout container__layout--large">
+                            <Gallery />
+                        </div>
                     </div>
                 </div>
                 <Footer />

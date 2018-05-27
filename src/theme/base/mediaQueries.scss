@@ -4,7 +4,6 @@
     .column {
         display: flex;
         flex-flow: column nowrap;
-        justify-content: space-around;
         align-items: flex-start;
     }
     .row {
@@ -23,7 +22,7 @@
     .column {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: flex-start;
         width:100%;
     }
