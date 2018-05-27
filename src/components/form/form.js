@@ -10,10 +10,7 @@ export default class Form extends Component {
 
         this.state = {
             formTitle: 'Form title',
-            caption: 'Submit'
-        };
-
-        this.state = {
+            caption: 'Submit',
             cities: []
         };
     }

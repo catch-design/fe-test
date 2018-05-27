@@ -30,20 +30,20 @@ npm install
     The production build, on the other hand, runs in production mode. The production build should run uglify and build your source files into one or multiple minimized files. It also extracts CSS and images and other sources loading with webpack. There's also no source maps or hot reloading included.
 
     // Build your app in dev mode
-    "build": "webpack -d",
+    npm run build
 
-    // start you app with prod mode
+    // start your app with prod mode
     // TODO: have to be updated if necessary with uglify
-    "start:prod": "webpack -p && live-server ./public",
+    npm run start:prod
 
     // start you app with dev mode
-    "start:dev": "webpack-dev-server --open",
+    npm run start:dev
 
     // pattern library
-    "storybook": "start-storybook -p 9001 -c .storybook",
+    npm run storybook
 
     // linting
-    "test:lint": "eslint 'src/**/*.js' *.js",
+    npm run test:lint
 
     // TODO; write tests if necessary
     "test": "echo \"No tests available\" && exit 0",
@@ -96,7 +96,7 @@ Styles are found in the `./src/components/theme` directory. They are written in 
 # Linting
 
 ```
-npm run lint
+npm run test:lint
 ```
 
 This project is set up with [`eslint`](http://eslint.org/) configuration, for its better handling of React's JSX. Your IDE should have an `eslint` plugin or module, or you can run it from the commandline.
@@ -109,12 +109,11 @@ TODO - Styles:
 * check how assets works with different line numbers of description
 * sticky footer
 * add explanation about mobile viewport
+* form component need more style for select
 
 TODO - Storybook:
-* add assets in storybook
 * check that all components in storybook
 
 TODO - general
 * add as much comments as possible and needed
-* create a form component
 * create a gallery component
