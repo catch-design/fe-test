@@ -1,0 +1,11 @@
+a, button {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+a, button, input, select {
+    &:focus {
+        outline: none;
+    }
+}

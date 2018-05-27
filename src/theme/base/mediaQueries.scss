@@ -1,0 +1,37 @@
+@import '../shared/variables.scss';
+
+@media screen and (max-width: $max-mobile-page-width) {
+    .column {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: $min-desktop-page-width) {
+    .column {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        width:100%;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48%;
+    }
+}
+
+

@@ -1,0 +1,23 @@
+@import '../../theme/shared/shared.scss';
+
+.container {
+    margin: 0px auto;
+    max-width: 770px;
+
+    &__inner {
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    &__layout {
+        margin-bottom: $main-margin-bottom;
+
+        &--small {
+          margin-bottom: $main-margin-bottom / 1.5;
+        }
+
+        &--large {
+          margin-bottom: $main-margin-bottom * 1.5;
+        }
+    }
+}

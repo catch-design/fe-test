@@ -1,0 +1,25 @@
+@import '../../../theme/shared/shared.scss';
+
+.card {
+    &__layout {
+        width: 100%;
+    }
+    &__image {
+        width: 100%;
+        max-height: 100%;
+    }
+    &__more {
+        font-size: 14px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+// TODO: check inheritance about text-align:center
+@media screen and (max-width: $max-mobile-page-width) {
+    .card {
+        &__detail {
+            text-align: left;
+        }
+    }
+}

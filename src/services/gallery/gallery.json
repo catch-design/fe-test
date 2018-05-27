@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "Lake Mountains",
+        "imageUrl": "../images/gallery/lake-mountains.png"
+    },
+    {
+        "id": 2,
+        "title": "Sunset Hills",
+        "imageUrl": "../images/gallery/sunset-hills.png"
+    },
+    {
+        "id": 3,
+        "title": "Sunset Sea",
+        "imageUrl": "../images/gallery/sunset-sea.png"
+    },
+    {
+        "id": 4,
+        "title": "Waterfall Mountains",
+        "imageUrl": "../images/gallery/waterfall-mountains.png"
+    }
+]

@@ -1,0 +1,28 @@
+@import '../../theme/shared/shared.scss';
+
+.gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -webkit-overflow-scrolling: touch; // smoothly scroll images on iOS Safari 
+
+    &__image {
+        height: 174px;
+        width: 236px;
+        border-radius: $base-border-radius;
+        margin-right: 7px;
+        flex: 0 0 auto;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+
+

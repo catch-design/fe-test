@@ -1,0 +1,8 @@
+@import '../../theme/shared/shared.scss';
+
+.separator {
+    border: 1px dashed $color-neutral-primary;
+    width: 170px;
+    display: block;
+    margin: 0 auto;
+}
