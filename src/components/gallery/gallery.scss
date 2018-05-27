@@ -1,25 +1,21 @@
 @import '../../theme/shared/shared.scss';
 
 .gallery {
-    width: 100%;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 
-    &__container {
-        vertical-align: middle;
-        display: inline-block;
-        white-space: nowrap;
-        width: 100%;
-        overflow-y: scroll;
-        padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
-        box-sizing: content-box; /* So the width will be 100% + 17px */
+    &::-webkit-scrollbar {
+      display: none;
     }
+    -webkit-overflow-scrolling: touch;
 
     &__image {
         height: 174px;
         width: 236px;
         border-radius: $base-border-radius;
         margin-right: 10px;
-        display: inline-block;
+        flex: 0 0 auto;
 
         &:last-child {
             margin-right: 0;
