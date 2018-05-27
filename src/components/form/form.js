@@ -28,10 +28,22 @@ export default class Form extends Component {
                 <h4 className="form__title">{this.state.formTitle}</h4>
                 <form>
                     <div className="form__container">
-                        <input className="form__input" type="text" name="name" placeholder="First Name" />
-                        <input className="form__input" type="text" name="surname" placeholder="Last Name" />
-                        <input className="form__input" type="text" name="email" placeholder="Email adress" />
-                        <input className="form__input" type="text" name="city" placeholder="City" />
+                        <div className="form__inner column">
+                            <div className="row">
+                                <input className="form__input" type="text" name="name" placeholder="First Name" />
+                            </div>
+                            <div className="row">
+                                <input className="form__input" type="text" name="surname" placeholder="Last Name" />
+                            </div>
+                        </div>
+                        <div className="form__inner column">
+                            <div className="row">
+                                <input className="form__input" type="text" name="email" placeholder="Email adress" />
+                            </div>
+                            <div className="row">
+                                <input className="form__input" type="text" name="city" placeholder="City" />
+                            </div>
+                        </div>
                     </div>
                     <div className="form__button" >
                         <Button caption={this.state.caption} />

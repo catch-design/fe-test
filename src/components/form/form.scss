@@ -13,9 +13,14 @@
         margin-bottom: 20px;
     }
 
+    &__inner {
+        margin-bottom: 20px;
+    }
+
     &__input {
-        min-width: 370px;
+        // min-width: 370px;
         padding: 15px;
+        width: 100%;
         border: 1px solid $color-dark-grey;
         border-radius: $base-border-radius;
 
