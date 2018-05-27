@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Header from '../header/header';
+import Form from '../form/form';
 import Separator from '../separator/separator';
 import Asset from '../asset/asset';
 import Footer from '../footer/footer';
@@ -21,6 +22,7 @@ export default class App extends Component {
                 <div className="container">
                     <div className="container__inner">
                         <Header title={this.state.title} />
+                        <Form />
                         <Separator />
                         <div className="assets">
                             <Asset />
