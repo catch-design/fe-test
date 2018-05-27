@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AssetList from './assetList/assetList';
-import AssetService from '../../services/assetService';
+import AssetService from '../../services/assets/assetService';
 
 export default class Asset extends Component {
 

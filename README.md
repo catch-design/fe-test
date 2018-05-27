@@ -104,16 +104,16 @@ This project is set up with [`eslint`](http://eslint.org/) configuration, for it
 
 TODO - Styles:
 * clean styles from time to time, remove duplication, do review
-* use em instead of px
+* use em instead of px if needed
 * describe mediaQuery logic in readme and choosen viewports (review class names)
 * check how assets works with different line numbers of description
 * sticky footer
 * add explanation about mobile viewport
 * form component need more style for select
+* check gallery styles
 
 TODO - Storybook:
 * check that all components in storybook
 
 TODO - general
 * add as much comments as possible and needed
-* create a gallery component

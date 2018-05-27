@@ -3,6 +3,7 @@ import Header from '../header/header';
 import Form from '../form/form';
 import Separator from '../separator/separator';
 import Asset from '../asset/asset';
+import Gallery from '../gallery/gallery';
 import Footer from '../footer/footer';
 import './app.scss';
 
@@ -27,6 +28,7 @@ export default class App extends Component {
                         <div className="assets">
                             <Asset />
                         </div>
+                        <Gallery />
                     </div>
                 </div>
                 <Footer />

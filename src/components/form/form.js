@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from '../button/button';
 import './form.scss';
-import CityService from '../../services/cityService';
+import CityService from '../../services/cities/cityService';
 
 export default class Form extends Component {
 
@@ -39,7 +39,7 @@ export default class Form extends Component {
                             </div>
                             <div className="form__styled-select row">
                                 <select className="form__field form__field--select" name="city">
-                                    <option className="form__select-option" value="hide"disabled selected>City</option>
+                                    <option className="form__select-option" value="hide" disabled selected>City</option>
                                     {
                                         this.state.cities.map(city=>
                                             <option key={city.id} value={city.title}>{city.title}</option>                                       
