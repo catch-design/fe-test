@@ -64,28 +64,37 @@ Storybook can be started and accessed via:
 -----
 # Code
 
+## Components
 Application code is found in the `./src` directory.
 
 The application is composed of the following components:
 
-    header - the application title
+    * header - the application title
 
-    form - the contact form for a user
+    * form - the contact form for a user which connects with CityService to get data for a list of cities
 
-    button - button component
+    * button component
 
-    separator - dashline which can be used across the app to separate components/blocks visually
+    * separator - dashline which can be used across the app to separate components/blocks visually
 
-    adventures - the component that manages state for Adventures and all child components (adventureList and adventureCard).
-    it's also connecting to AdventureService and getting adventure data
+    * assets - the component that manages state for an asset and all child components (assetList and assetCard).
+    it's also connecting to AssetService and getting adventure data
 
-    adventureList - list of adventures
+    * assetList - list of adventures
 
-    adventureCard - Represents a single instance of a adventure
+    * assetCard - represents a single instance of an adventure
 
-    gallery - a carousel gallery
+    * gallery - the simple comonent to represent a gallery (works with scrolling on desktop/mobile). It have a connection to GalleryService to get images.
 
-    footer - the component that contains child components such as sharebar, copyright and contactInfo
+    * footer - the component that contains child components such as sharebar, copyright and contactInfo.
+
+## Media Queries
+One of the requrements includes a different view for mobile and desktop which has been achieved with using media queries:
+
+    $max-mobile-page-width: 768px;
+    $min-desktop-page-width: 769px;
+
+Notice that a viewport size has not been discussed, so the size is using here - something that made more sense during development. Different devices viewport can be found under https://www.mydevice.io/ so you can make a decision what breakpoint to use for your app.
 
 -----
 # Style
@@ -105,10 +114,9 @@ This project is set up with [`eslint`](http://eslint.org/) configuration, for it
 TODO - Styles:
 * clean styles from time to time, remove duplication, do review
 * use em instead of px if needed
-* describe mediaQuery logic in readme and choosen viewports (review class names)
+* review classNames
 * check how assets works with different line numbers of description
 * sticky footer
-* add explanation about mobile viewport
 * form component need more style for select
 * check gallery styles
 
