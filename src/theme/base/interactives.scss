@@ -2,6 +2,9 @@ a, button {
     &:hover {
         cursor: pointer;
     }
+}
+
+a, button, input {
     &:focus {
         outline: none;
     }

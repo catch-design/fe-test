@@ -4,7 +4,5 @@
     border: 1px dashed $color-neutral-primary;
     width: 170px;
     display: block;
-
-    margin: 0 auto;
-    margin-bottom: 60px;
+    margin: $main-block-margin;
 }
