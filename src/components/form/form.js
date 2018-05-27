@@ -21,7 +21,7 @@ export default class Form extends Component {
     componentDidMount() {
         this.setState(() => ({ cities: CityService.getCities() }));
     }
-    // TODO: can be made with template to avoid repetition
+    // TODO: can be made with template to avoid repetition?
     render() {
         return (
             <div className="form">
@@ -40,9 +40,9 @@ export default class Form extends Component {
                             <div className="row">
                                 <input className="form__field" type="text" name="email" placeholder="Email adress" />
                             </div>
-                            <div className="row">
+                            <div className="form__styled-select row">
                                 <select className="form__field form__field--select" name="city">
-                                    <option className="form__select-option" value=""disabled selected>City</option>
+                                    <option className="form__select-option" value="hide"disabled selected>City</option>
                                     {
                                         this.state.cities.map(city=>
                                             <option key={city.id} value={city.title}>{city.title}</option>                                       

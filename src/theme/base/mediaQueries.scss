@@ -14,7 +14,7 @@
         width: 100%;
 
         &:not(:last-child) {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -31,11 +31,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 50%;
-
-        &:first-child {
-            margin-right: 30px;
-        }
+        width: 48%;
     }
 }
 

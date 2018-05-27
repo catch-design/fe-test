@@ -23,6 +23,7 @@
         width: 100%;
         border: 1px solid $color-dark-grey;
         border-radius: $base-border-radius;
+        appearance: none;
 
         &:focus {
             border-color: $color-light-blue;
@@ -31,12 +32,18 @@
         &--select {
             // review style
             height:48px;
+            background: transparent;
         }
     }
 
-    &__select-option {
-        color: $color-neutral-primary;
-    }
+    // TODO: make icon css, add action on hover (transition)
+    &__styled-select {
+        background: url(down-arrow-select.svg) no-repeat 98%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }    
 
     &__button {
         text-align: center;
