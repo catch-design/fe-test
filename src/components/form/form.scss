@@ -1,8 +1,6 @@
 @import '../../theme/shared/shared.scss';
 
 .form {
-    margin: $main-block-margin;
-
     &__title {
         text-align: center;
         font-size: $base-font-size;
@@ -38,7 +36,7 @@
 
     // TODO: make icon css, add action on hover (transition)
     &__styled-select {
-        background: url(down-arrow-select.svg) no-repeat 98%;
+        background: url('images/down-arrow-select.svg') no-repeat 98%;
 
         &:hover {
             cursor: pointer;
