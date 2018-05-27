@@ -1,0 +1,28 @@
+.gallery {
+    width: 100%;
+    overflow: hidden;
+
+    &__container {
+        vertical-align: middle;
+        display: inline-block;
+        white-space: nowrap;
+        width: 100%;
+        overflow-y: scroll;
+        padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+        box-sizing: content-box; /* So the width will be 100% + 17px */
+    }
+
+    &__image {
+        height: 174px;
+        width: 236px;
+        font-size: 25px;
+        background: blue;
+        margin: 10px;
+        display: inline-block;
+        line-height: 100px; 
+    }
+}
+
+
+
+
