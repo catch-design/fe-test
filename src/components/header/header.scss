@@ -1,7 +1,7 @@
 @import '../../theme/shared/shared.scss';
 
 .header {
-    font-size: 24px;
+    font-size: em(28);
     font-weight: $base-bold-font-weight;
     color: $base-color;
     text-align: center;
