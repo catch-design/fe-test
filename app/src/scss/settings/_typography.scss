@@ -1,0 +1,10 @@
+$pixel-size: 16px;
+$font-title: ariel, sans-serif;
+$font-body: ariel, sans-serif;
+$font-size-base: 0.875rem; // 14px
+
+body {
+  -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}

@@ -1,0 +1,10 @@
+body {
+    .page_wrap {
+        position: relative;
+        width: 100%;
+        max-width: 810px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        border: multiply($spacing-large, 2) solid transparent;
+    }
+}

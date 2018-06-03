@@ -1,0 +1,58 @@
+
+// RGBA fallback
+@mixin rgba($property, $background: black, $opacity: 0.75) {
+    #{$property}: rgba($background, $opacity);
+}
+
+// Multiply unit
+@function multiply($unit, $factor) {
+  @return $unit * $factor;
+}
+
+// Gradient BG
+@mixin bgGradient($bg-from, $bg-to) {
+    background: $bg-from;/* Old Browsers */
+    background: -moz-linear-gradient(top, $bg-from 0%, $bg-to 90%); /* FF3.6+ */
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, $bg-from), color-stop(100%, $bg-to));/* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(top, $bg-from 0%, $bg-to 90%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, $bg-from 0%, $bg-to 90%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, $bg-from 0%, $bg-to 90%); /* IE 10+ */
+    background: linear-gradient(to bottom, $bg-from 0%, $bg-to 90%);/* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-from', endColorstr='$bg-to', GradientType=0 );/* IE6-9 */
+}    
+
+// media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; } 
+  }
+}
+
+// center vertically and/or horizontally an absolute positioned element
+
+@mixin center($xy:xy) {
+    @if $xy == xy {
+      left: 50%;
+      top: 50%;
+      bottom: auto;
+      right: auto;
+      transform:translateX(-50%) translateY(-50%);
+    }
+    @else if $xy == x {
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+    }
+    @else if $xy == y {
+      top: 50%;
+      bottom: auto;
+      transform: translateY(-50%);
+    }
+}

@@ -1,0 +1,14 @@
+// Spacing
+$spacing: 10px;
+$spacing-large: 15px;
+
+// Borders
+$b-radius: 5px;
+
+// Transition
+$easing: cubic-bezier(.8,0,.2,1);
+
+// breakpoints -- used in media queries mixin.  
+$S:     480px;   
+$M:     768px;     
+$L:     1024px; 

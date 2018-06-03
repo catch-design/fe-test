@@ -1,0 +1,10 @@
+body {
+    ::-moz-selection {
+        background: $c-one;
+        color: $ct-light;
+    }
+    ::selection {
+        background: $c-one;
+        color: $ct-light;
+    }
+}

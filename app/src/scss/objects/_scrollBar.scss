@@ -1,0 +1,36 @@
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  cursor: -webkit-grab;
+   &:hover {
+     width: 20px;
+     -webkit-transition: width 0.66s ease;
+     transition: width 0.66s ease;
+   }
+}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  height: 7px;
+  display: block;
+  background-color: darken($ct-light, 10%);
+}
+::-webkit-scrollbar-track-piece {
+  background-color: darken($ct-light, 2%);
+  width:14px;
+}
+::-webkit-scrollbar-thumb {
+  width:14px;
+  background-color: $c-one;
+  cursor: pointer;
+  cursor: -webkit-grab;
+  -webkit-transition: background-color 0.66s ease;
+  transition: background-color 0.66s ease;
+  &:hover {
+    background-color: lighten($c-one, 2%);
+    -webkit-transition: background-color 0.66s ease;
+    transition: background-color 0.66s ease;
+    cursor: pointer;
+    cursor: -webkit-grab;
+  }
+}
