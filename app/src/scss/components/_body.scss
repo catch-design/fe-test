@@ -2,9 +2,9 @@ body {
     .page_wrap {
         position: relative;
         width: 100%;
-        max-width: 810px;
+        max-width: 790px;
         margin: 0 auto;
         box-sizing: border-box;
-        border: multiply($spacing-large, 2) solid transparent;
+        border-top: multiply($spacing-large, 2) solid transparent;
     }
 }
