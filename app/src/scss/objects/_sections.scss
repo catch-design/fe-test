@@ -14,6 +14,11 @@
     }
 }
 
+section.section {
+    &:last-of-type {
+        margin-bottom: multiply($spacing-large, 4);
+    }
+}
 .col {
     box-sizing: border-box;
     position: relative;

@@ -4,7 +4,6 @@
   cursor: pointer;
   cursor: -webkit-grab;
    &:hover {
-     width: 20px;
      -webkit-transition: width 0.66s ease;
      transition: width 0.66s ease;
    }

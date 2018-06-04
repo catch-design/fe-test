@@ -1,0 +1,13 @@
+
+.swiper-container {
+    width: 100%;
+    max-width: 770px;
+    height: 174px;
+
+    .swiper-slide {
+        width: 236px;
+        img {
+            border-radius: $b-radius;
+        }
+    }
+}

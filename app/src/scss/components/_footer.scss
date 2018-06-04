@@ -9,6 +9,9 @@
         width: 100%;
         max-width: $site-width;
         margin: 0 auto;
+        box-sizing: border-box;
+        border: solid transparent $spacing;
+        border-width: 0 $spacing;
     }
     .footer_col {
         display: flex;
