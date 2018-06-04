@@ -14,6 +14,8 @@
 
 //-------------------- Elements ----//
 @import 'elements/type';
+@import 'elements/forms';
+@import 'elements/buttons';
 
 //-------------------- Objects ----//
 @import 'objects/selection';
@@ -25,7 +27,7 @@
 @import 'components/header';
 @import 'components/body';
 @import 'components/footer';
-@import 'components/forms';
+@import 'components/contact';
 @import 'components/spacer';
 @import 'components/snippet';
 @import 'components/scroll-gallery';

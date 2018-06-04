@@ -9,3 +9,17 @@
         border-width: multiply($spacing-large, 2) $spacing multiply($spacing-large, 2) $spacing;
     }
 }
+
+.col {
+    box-sizing: border-box;
+    position: relative;
+    &--half {
+        width: 50%;
+        &:nth-of-type(odd) {
+            border-right: $spacing-large solid transparent;
+        }
+        &:nth-of-type(even) {
+            border-left: $spacing-large solid transparent;
+        }
+    }
+}

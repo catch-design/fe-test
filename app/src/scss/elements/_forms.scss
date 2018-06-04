@@ -1,0 +1,38 @@
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+
+    .form_input {
+        width: 90%;
+        padding: 5%;
+        border: 1px solid $c-four;
+        border-radius: $b-radius;
+        margin-bottom: multiply($spacing, 2);
+        outline: none;
+        color: $ct-mid;
+        transition: all 0.3s $easing;
+        &::-webkit-input-placeholder {
+            color: $ct-mid;
+        }
+        &:focus {
+            caret-color: $cl-rest;
+            border-color: $cl-rest;  
+            color: $cl-rest;   
+            &::-webkit-input-placeholder {
+                color: $cl-rest;
+            }       
+        }
+    }
+    .form_select {
+        position: relative;
+        width: 100%;
+        -webkit-appearance: none;
+        background-color: $ct-light;
+    }
+    .form_select_icon {
+        position: absolute;
+        top: multiply($spacing, 2);
+        right: multiply($spacing, 2);
+    }
+}

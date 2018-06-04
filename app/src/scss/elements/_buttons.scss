@@ -1,0 +1,19 @@
+.button {
+    border-radius: $b-radius;
+    border: 1px solid $cl-rest;
+    color: $ct-light;
+    font-weight: bold;
+    outline: none;
+    text-decoration: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    
+    &--primary {
+        background-color: $c-one;
+        border-color: $c-two;
+        width: 100%;
+        max-width: 230px;
+        padding: multiply($spacing, 2);
+        margin: 0 auto;
+    }
+}

@@ -19,19 +19,35 @@
             <h1 class="page-header_title">A front-end test of sorts</h1>
         </header>
 
-        <section class="form"><!-- Form section-->
+        <section class="contact section section--spaced"><!-- Form section-->
           <h2 class="section_title">Form title</h2>
           <form action="">
-            <input id="first-name" class="form_input" type="text" placeholder="First name">
-            <input id="last-name" class="form_input" type="text" placeholder="Last name">
-            <input id="email" class="form_input" type="email" placeholder="Email address">
-            <select class="form_select" name="city">
-              <option value="whangarei">Whangarei</option> 
-              <option value="napier">Napier</option>
-              <option value="wellington">Wellington</option>
-              <option value="dunedin">Dunedin</option>
-            </select>
-            <input type="button" class="form_button button--primary" value="submit">
+            <div class="col col--half">
+              <input id="first-name" class="form_input" type="text" placeholder="First name">
+            </div>
+            <div class="col col--half">
+              <input id="last-name" class="form_input" type="text" placeholder="Last name">
+            </div>
+            <div class="col col--half">
+              <input id="email" class="form_input" type="email" placeholder="Email address">
+            </div>
+            <div class="col col--half">
+              <select class="form_input form_select" name="city">
+                <option value="" selected>City</option>
+                <option value="whangarei">Whangarei</option> 
+                <option value="napier">Napier</option>
+                <option value="wellington">Wellington</option>
+                <option value="dunedin">Dunedin</option>
+              </select>
+              <span class="form_select_icon">
+                  <svg width="15px" height="8px" viewBox="0 0 15 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="export" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                        <polyline id="Path-2" stroke="#697B95" stroke-width="2" points="1 1 7.24325974 6 14 1"></polyline>
+                    </g>
+                </svg>
+              </span>
+            </div>
+            <input type="button" class="button button--primary" value="Submit">
           </form>
         </section><!-- Form section ends-->
 
