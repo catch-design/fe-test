@@ -15,6 +15,17 @@
         max-width: 230px;
         padding: multiply($spacing, 2);
         margin: 0 auto;
+        transition: all 0.6s $easing;
+        &:hover {
+            max-width: 236px;
+            background-color: lighten($c-one, 5%);
+            transition: all 0.6s $easing;           
+        }
+        &:active {
+            max-width: 228px;
+            background-color: $c-two;
+            transition: all 0.6s $easing;           
+        }
     }
 }
 
