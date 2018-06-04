@@ -26,6 +26,36 @@
             &:last-of-type {
                 margin-right: 0;
             }
+            svg {
+                path.ring {
+                    stroke: $cl-rest;
+                    transition: all 0.3s $easing;
+                }
+                path.ico {
+                    fill: $cl-rest;
+                    transition: all 0.3s $easing;
+                }
+            }
+            &:hover {
+                path.ring {
+                    stroke: $cl-hover;
+                    fill: $cl-hover;
+                    transition: all 0.3s $easing;
+                }
+                path.ico {
+                    fill: $ct-light;
+                    transition: all 0.3s $easing;
+                }
+            }
+            &:active {
+                path.ring {
+                    stroke: darken($cl-rest, 5%);
+                }
+                path.ico {
+                    fill: darken($cl-rest, 5%);
+                    transition: all 0.3s $easing;
+                }
+            }
         }
     }
     @include MQ(S) {
