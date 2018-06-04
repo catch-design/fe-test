@@ -28,11 +28,75 @@ form {
         position: relative;
         width: 100%;
         -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
         background-color: $ct-light;
     }
     .form_select_icon {
         position: absolute;
         top: 25%;
         right: 5%;
+    }
+}
+
+// Validation
+
+.hidden {
+    display: none;
+}
+.parsley-required {
+    color: $c-error;
+}
+.parsley-errors-list {
+    &.filled {
+        margin-bottom: multiply($spacing, 2);
+    }
+}
+.form_input {
+    &.parsley-error {
+        color: $c-error;
+        border-color: $c-error;
+        margin-bottom: $spacing;
+        &::-webkit-input-placeholder {
+           color: $c-error;
+       }
+        &:focus {
+            caret-color: $c-error;
+            border-color: $c-error;  
+            //color: $c-error;   
+            &::-webkit-input-placeholder {
+                color: $c-error;
+            }       
+        }
+    }
+}
+.form_input {
+    &.parsley-success {
+        &:focus {
+            caret-color: $c-success;
+            border-color: $c-success;  
+            color: $c-success;   
+            &::-webkit-input-placeholder {
+                color: $c-success;
+            }       
+        }
+    }
+}
+
+.bs-callout {
+    max-width: 280px;
+    margin: 0 auto multiply($spacing, 2);
+    padding: multiply($spacing, 2);
+    border: 1px solid $c-four;
+    border-radius: $b-radius; 
+    &.bs-callout-warning {
+        background-color: lighten($c-error, 45%);
+        border-color: lighten($c-error, 25%);
+        color: $c-error;
+    }
+    &.bs-callout-info {
+        background-color: lighten($c-success, 40%);
+        border-color: lighten($c-success, 20%);
+        color: $c-success;
     }
 }

@@ -6,10 +6,16 @@ $ct-dark: #101820;
 
 //------------------------------ Link ----//
 $cl-rest: #008FFF;
-$cl-hover: #0076D1;
+//$cl-hover: #0076D1;
+$cl-hover: darken(#76E691, 5%);
 
 //------------------------------ UI ----//
 $c-one: #76E691;
 $c-two: #53B16A;
 $c-three: #FAFAFA;
 $c-four: #D2DCE8;
+
+//------------------------------ Validate ----//
+
+$c-error: #D4345C;
+$c-success: darken(#76E691, 10%);
