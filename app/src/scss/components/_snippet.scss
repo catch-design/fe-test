@@ -1,0 +1,25 @@
+.snippets {
+    display: flex;
+    flex-wrap: wrap;
+    .snippet {
+        .snippet_img-wrap {
+            margin-bottom: $spacing-large;
+            .snippet_img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: $b-radius;
+            }
+        }
+        .snippet_text {
+            position: relative;
+        }
+        .snippet_heading {
+            margin-bottom: 0.2rem;
+        }
+        .snippet_link {
+            display: inline-block;
+            margin-top: multiply($spacing, 2);
+        }
+    }
+}
