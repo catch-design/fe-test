@@ -19,9 +19,16 @@
     }
 }
   
-@keyframes dash {
-    to {
-        stroke-dashoffset: 0;
+@keyframes borderIn {
+    0% {
+        transform: scale3d(0,1,1);
+        border-bottom: 1px solid $c-four;
+    }
+    95% {
+        transform: scale3d(1,1,1);      
+    }
+    100% {
+        border-bottom: 1px dashed $ct-mid;
     }
 }
 

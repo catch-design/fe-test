@@ -1,0 +1,17 @@
+.spacer {  
+    .divider {
+        position: relative;
+        width: 170px;
+        margin: 0 auto;
+        height: 1px;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 170px;        
+            transform-origin: 50% 50%;
+            animation: borderIn 1s $easing 0s;
+            animation-fill-mode: forwards;
+            transition: transform 0.6s $easing 0s;
+        }
+    }
+}

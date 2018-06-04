@@ -3,22 +3,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
 
-body ::-moz-selection {
-  background: #D4345C;
-  color: #FFFFFF; }
-
-body ::selection {
-  background: #D4345C;
-  color: #FFFFFF; }
-
-.page_wrap {
-  position: relative;
-  width: 100%;
-  max-width: 810px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  border: multiply(15px, 2) solid transparent; }
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -364,7 +348,7 @@ body {
   font-weight: normal;
   line-height: 1.125rem;
   letter-spacing: -0.025rem;
-  color: #ececec;
+  color: #697B95;
   text-align: left; }
 
 h1 {
@@ -373,21 +357,76 @@ h1 {
   font-weight: bold;
   line-height: 1.875rem;
   letter-spacing: -0.025rem;
-  color: #1d1d1d; }
+  color: #101820; }
 
 h3 {
   font-weight: bold; }
 
 a {
-  color: #4234D4;
+  color: #008FFF;
   text-decoration: none;
   transition: color 0.3s cubic-bezier(0.8, 0, 0.2, 1) 0s; }
   a:hover {
-    color: #7d73e1;
+    color: #0076D1;
     transition: color 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s; }
   a:active {
-    color: #372ac5;
+    color: #0081e6;
     transition: color 0.15s cubic-bezier(0.8, 0, 0.2, 1) 0s; }
+
+form {
+  display: flex;
+  flex-wrap: wrap; }
+  form .form_input {
+    width: 90%;
+    padding: 5%;
+    border: 1px solid #D2DCE8;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+    color: #697B95;
+    transition: all 0.3s cubic-bezier(0.8, 0, 0.2, 1); }
+    form .form_input::-webkit-input-placeholder {
+      color: #697B95; }
+    form .form_input:focus {
+      caret-color: #008FFF;
+      border-color: #008FFF;
+      color: #008FFF; }
+      form .form_input:focus::-webkit-input-placeholder {
+        color: #008FFF; }
+  form .form_select {
+    position: relative;
+    width: 100%;
+    -webkit-appearance: none;
+    background-color: #FFFFFF; }
+  form .form_select_icon {
+    position: absolute;
+    top: 20px;
+    right: 20px; }
+
+.button {
+  border-radius: 5px;
+  border: 1px solid #008FFF;
+  color: #FFFFFF;
+  font-weight: bold;
+  outline: none;
+  text-decoration: none;
+  -webkit-appearance: none;
+  cursor: pointer; }
+  .button--primary {
+    background-color: #76E691;
+    border-color: #53B16A;
+    width: 100%;
+    max-width: 230px;
+    padding: 20px;
+    margin: 0 auto; }
+
+body ::-moz-selection {
+  background: #76E691;
+  color: #FFFFFF; }
+
+body ::selection {
+  background: #76E691;
+  color: #FFFFFF; }
 
 ::-webkit-scrollbar {
   width: 14px;
@@ -411,13 +450,13 @@ a {
 
 ::-webkit-scrollbar-thumb {
   width: 14px;
-  background-color: #D4345C;
+  background-color: #76E691;
   cursor: pointer;
   cursor: -webkit-grab;
   -webkit-transition: background-color 0.66s ease;
   transition: background-color 0.66s ease; }
   ::-webkit-scrollbar-thumb:hover {
-    background-color: #d63c63;
+    background-color: #7fe898;
     -webkit-transition: background-color 0.66s ease;
     transition: background-color 0.66s ease;
     cursor: pointer;
@@ -440,6 +479,37 @@ a {
 @keyframes dash {
   to {
     stroke-dashoffset: 0; } }
+
+.section .section_title {
+  text-align: center;
+  margin-bottom: 30px; }
+
+.section--spaced {
+  box-sizing: border-box;
+  border: solid transparent 30px;
+  border-width: 30px 10px 30px 10px; }
+
+.col {
+  box-sizing: border-box;
+  position: relative; }
+  .col--half {
+    width: 50%; }
+    .col--half:nth-of-type(odd) {
+      border-right: 15px solid transparent; }
+    .col--half:nth-of-type(even) {
+      border-left: 15px solid transparent; }
+
+.page-header .page-header_title {
+  text-align: center;
+  margin: 0; }
+
+body .page_wrap {
+  position: relative;
+  width: 100%;
+  max-width: 790px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-top: 30px solid transparent; }
 
 .clearfix:after {
   content: ".";
