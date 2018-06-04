@@ -21,5 +21,10 @@
             display: inline-block;
             margin-top: multiply($spacing, 2);
         }
+        @include MQ(S) {
+            &:first-of-type {
+                margin-bottom: multiply($spacing, 2);
+            }
+        }
     }
 }

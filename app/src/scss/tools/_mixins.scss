@@ -25,13 +25,13 @@
 
 @mixin MQ($canvas) {
   @if $canvas == S {
-   @media only screen and (min-width: $S) { @content; } 
+   @media only screen and (max-width: $S) { @content; } 
   }
   @else if $canvas == M {
-   @media only screen and (min-width: $M) { @content; } 
+   @media only screen and (max-width: $M) { @content; } 
   }
   @else if $canvas == L {
-   @media only screen and (min-width: $L) { @content; } 
+   @media only screen and (max-width: $L) { @content; } 
   }
 }
 

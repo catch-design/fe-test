@@ -12,11 +12,19 @@
         border: solid transparent multiply($spacing-large, 2); 
         border-width: multiply($spacing-large, 2) $spacing multiply($spacing-large, 2) $spacing;
     }
+    @include MQ(S) {
+        &--spaced {
+            border-width: multiply($spacing, 2) $spacing multiply($spacing, 2) $spacing;
+        }
+    }
 }
 
 section.section {
     &:last-of-type {
         margin-bottom: multiply($spacing-large, 4);
+        @include MQ(S) {
+            margin-bottom: multiply($spacing, 4);         
+        }
     }
 }
 .col {
@@ -29,6 +37,15 @@ section.section {
         }
         &:nth-of-type(even) {
             border-left: $spacing-large solid transparent;
+        }
+        @include MQ(S) {
+            width: 100%;
+            &:nth-of-type(odd) {
+                border-right: none;
+            }
+            &:nth-of-type(even) {
+                border-left: none;
+            }
         }
     }
 }

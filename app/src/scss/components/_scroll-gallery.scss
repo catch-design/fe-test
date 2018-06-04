@@ -1,4 +1,9 @@
-
+.scroll-gallery {
+    @include MQ(S) {
+        border-left: none;
+        border-right: none;
+    }
+}
 .swiper-container {
     width: 100%;
     max-width: 770px;

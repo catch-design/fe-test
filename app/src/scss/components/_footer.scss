@@ -28,4 +28,19 @@
             }
         }
     }
+    @include MQ(S) {
+        padding: multiply($spacing-large, 4) 0;
+        .page_footer_inner {
+            flex-direction: column-reverse;
+        }
+        .footer_col {
+            text-align: center;
+            p {
+                max-width: 280px;
+            }
+            &:last-of-type {
+                margin-bottom: multiply($spacing-large, 2);
+            }
+        }
+    }
 }
