@@ -1,0 +1,9 @@
+.u-list {
+    margin-bottom: multiply($spacing-large, 2);
+    li {
+        line-height: multiply($spacing, 2);
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
