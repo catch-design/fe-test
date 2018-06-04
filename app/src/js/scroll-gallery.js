@@ -1,5 +1,6 @@
 var $ = require("jquery");
 import Swiper from 'swiper';
+require ('swiper');
 console.log('swiper loaded');
 
 $(document).ready(function () {

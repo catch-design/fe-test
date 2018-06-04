@@ -1,4 +1,3 @@
-@import url(/Users/Gjw/_Projects/_web/_GitHub/fe-test/app/node_modules/swiper/dist/css/swiper.css);
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -495,6 +494,13 @@ form .form_select_icon {
   position: absolute;
   top: 25%;
   right: 5%;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  form .form_select_icon {
+    /* IE10+ CSS styles go here */
+    display: none;
+  }
 }
 
 .hidden {
