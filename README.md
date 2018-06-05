@@ -2,7 +2,7 @@
 ## Hello Catch!
 
 Hi Murray, here is the completed test! I decided this was a great excuse to learn WebPack .. the morning before starting the project!
-I was able to get to bundling JS and SCSS and running a live dev server which was been fun, though didn't quite manage to squeeze in file loading or HTML (yet) I also ran out of time to figure out why my autoprefixer wasn't working on compile so I used my IDE for that task.
+I was able to get to bundling JS and SCSS and running a live dev server which was been fun, though didn't quite manage to squeeze in file loading or HTML (yet).
 
 Everything should be ready to roll, just cd to the 'app' project folder and 'npm run start' which should open up a dev server and load the project.
 
