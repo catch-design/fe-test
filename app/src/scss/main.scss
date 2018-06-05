@@ -1,30 +1,30 @@
 
-//-------------------- Settings ----//
+/*-------------------- Settings ----*/
 @import 'settings/typography';
 @import 'settings/colours';
 @import 'settings/ui-vars';
 @import 'settings/layout';
 
-//-------------------- Tools ----//
+/*-------------------- Tools ----*/
 @import 'tools/mixins';
 
-//-------------------- Resets ----//
+/*-------------------- Resets ----*/
 @import 'resets/reset';
 @import 'resets/normalize';
 
-//-------------------- Elements ----//
+/*-------------------- Elements ----*/
 @import 'elements/type';
 @import 'elements/lists';
 @import 'elements/forms';
 @import 'elements/buttons';
 
-//-------------------- Objects ----//
+/*-------------------- Objects ----*/
 @import 'objects/selection';
 @import 'objects/scrollBar';
 @import 'objects/animation';
 @import 'objects/sections';
 
-//-------------------- Components ----//
+/*-------------------- Components ----*/
 @import 'components/header';
 @import 'components/body';
 @import 'components/footer';
@@ -34,5 +34,5 @@
 @import 'components/scroll-gallery';
 
 
-//-------------------- Overrides ----//
+/*-------------------- Overrides ----*/
 @import 'overrides/clearfix';
