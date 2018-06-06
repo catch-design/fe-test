@@ -1,0 +1,14 @@
+.footer {
+  margin: 60px -10px 0;
+  border-top: 1px solid #d2dce8;
+  padding: 60px 10px;
+  text-align: center;
+  background-color: #fafafa;
+
+  h2 { margin-top: 0; }
+  p { margin-bottom: 6px; }
+
+  &__content {
+    padding-bottom: 24px;
+  }
+}

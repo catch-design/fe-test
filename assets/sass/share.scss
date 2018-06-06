@@ -1,0 +1,34 @@
+.share {
+  padding-bottom: 24px;
+
+  &__button {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    margin-right: 14px;
+    text-indent: -9999px; // We indent text off screen as this is only for screen readers / SEO
+  }
+
+  &__button:hover, &__button:active  {
+    opacity: 0.8;
+    transition: 0.2s;
+  }
+
+  // By using both background and background-image, we can use SVG images, backward-compatible to PNG
+  &__button--facebook {
+    background: transparent url('../images/icon-facebook.png') no-repeat;
+    background-image: url('../images/icon-facebook.svg'), none;
+  }
+
+  &__button--instagram {
+    background: transparent url('../images/icon-instagram.png') no-repeat;
+    background-image: url('../images/icon-instagram.svg'), none;
+  }
+
+  &__button--youtube {
+    background: transparent url('../images/icon-youtube.png') no-repeat;
+    background-image: url('../images/icon-youtube.svg'), none;
+  }
+
+
+}

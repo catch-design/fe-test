@@ -1,0 +1,11 @@
+.gallery {
+  overflow: auto;
+
+  img {
+    display: inline-block;
+    width: 100%;
+    max-width: 236px;
+    margin-right: 10px;
+  }
+}
+
