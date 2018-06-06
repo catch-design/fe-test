@@ -1,0 +1,5 @@
+// all.scss will import all of our extension SASS such as variables and utilities
+// simply import all.scss at the top of any SASS file that might require extensions
+
+@import '_variables';
+@import '_utilities';

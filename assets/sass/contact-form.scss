@@ -1,0 +1,46 @@
+.contact-form {
+  margin: 0 auto;
+  text-align: center;
+
+  input, select {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 5px;
+    margin: 0 auto 20px;
+    padding: 16px 20px;
+  }
+
+  h2 {
+    margin-bottom: 18px;
+    font-weight: normal;
+  }
+
+  &__field {
+    border: 1px solid #d2dce8;
+    color: #697b95;
+  }
+
+  &__submit {
+    max-width: 270px; // Design of button is responsive but should not exceed 270px
+    border: 1px solid #53b16a;
+    background-color: #76e691;
+    color: #fff;
+  }
+
+  &__submit:hover, &__submit:active {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity .1s ease-in;
+  }
+}
+
+.contact-form::after {
+  display: block;
+  width: 100%;
+  max-width: 170px;
+  margin: 0 auto;
+  border-bottom: 1px dashed #697B95;
+  padding-bottom: 20px;
+  content: '';
+}

@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Responsive Cures</title>
+	<title>A front-end test of sorts</title>
 	<meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Cures for common responsive design problems.  ">
-    <meta name="keywords" content="Responsive Design, HTML, CSS, Mobile, SASS, flex, flexbox, Lewis Barron, Developer, UI, user interface">
+    <meta name="description" content="A friend end test of sorts, completed by Lewis Barron.">
+    <meta name="keywords" content="SEO friendly keywords, Catch, Test, developer">
 
     <!-- Normalize css used to reset default styling -->
     <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" media="all" />
@@ -32,10 +32,10 @@
         <form class="contact-form">
             <h2>Form title</h2>
 
-            <input type="text" value="First name" />
-            <input type="text" value="Last name" />
-            <input type="text" value="E-mail address" />
-            <select>
+            <input class="contact-form__field" type="text" onfocus="this.value=''" value="First name" />
+            <input class="contact-form__field" type="text" onfocus="this.value=''" value="Last name" />
+            <input class="contact-form__field" type="text" onfocus="this.value=''" value="E-mail address" />
+            <select class="contact-form__field">
                 <option>Auckland</option>
                 <option>Hamilton</option>
                 <option>Tauranga</option>
@@ -43,6 +43,7 @@
                 <option>Christchurch</option>
                 <option>Dunedin</option>
             </select>
+
             <input class="contact-form__submit" type="submit" value="Submit" />
         </form>
         <section class="projects-list">
