@@ -1,6 +1,10 @@
 .gallery {
   overflow: auto;
 
+  &__images {
+    width: 1024px; // An arbitrary value representing the contents of a long -- js powered -- image gallery
+  }
+
   img {
     display: inline-block;
     width: 100%;
