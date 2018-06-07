@@ -39,7 +39,7 @@ A simple test for front end developers
 
 The HTML in this project is developed using HTML5 BEM methodology (see <https://en.bem.info/methodology/quick-start/>).
 
-As soon as you enter the page wrapper, you will find that the HTML is categorised and separated into a component naming convention, e.g 'product-list' and 'product-list__item'. Check the BEM guidelines for more information.
+As soon as you enter the page wrapper, you will find that the HTML is categorised and separated into a component naming convention, e.g 'product-list' and 'product-list__item'. Check the BEM guidelines for more information on this concept.
 
 ## CSS / SASS
 
@@ -89,7 +89,7 @@ Note: normalize.css is a third-party stylesheet developed by github.com/necolas/
 
 ## What next?
 
-fe-test-lewisbarron-1.0 branch has been created to meet a minimal viable product, meaning it meets the needs of the acceptance criteria;code written from the ground up, utilised modern technologies, methodologies and web standards. It is intended as a first iteration for a fictional product.
+fe-test-lewisbarron-1.0 branch has been created to meet a minimal viable product, meaning it meets the needs of the acceptance criteria; code written from the ground up, utilised modern technologies, methodologies and web standards, and tested on all major devices and browsers. It is intended as a first iteration for a fictional product.
 
 What would I expect to produce in version 1.1.0?
 
