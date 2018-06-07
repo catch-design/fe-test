@@ -4,12 +4,15 @@
   margin: 0 auto;
   text-align: center;
 
+  // These are generic styles used for all inputs and selects in this form
   input, select {
     width: 100%;
     box-sizing: border-box;
     border-radius: 5px;
     padding: 16px 20px;
   }
+
+  select { height: 50px; } // Need to set a fixed height on select for Chrome.. silly Chrome
 
   h2 {
     margin-bottom: 20px;

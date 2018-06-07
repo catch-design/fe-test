@@ -7,6 +7,9 @@
 // The maximum width of our design is 780px (770 plus 10 padding), beyond that point the design does not change
 $max-design-width: 780px;
 
+// The maximum design width excluding padding
+$max-width: 770px;
+
 // [Spacing]
 
 $spacing: 10px;
@@ -14,12 +17,9 @@ $spacing: 10px;
 // [Colours]
 
 $color-white: #fff;
-$color-background: #FCF6F6;
-$color-header-background: #E1F8FE;
-$color-dompost-blue: #23C2FC;
-$color-title-white: #fdffff;
-$color-divider: #C0BDBE;
-$font-color-standard: #45444B;
+$color-link: #008fff;
+$color-lynch: #697b95;
+
 
 // [Spacing]
 

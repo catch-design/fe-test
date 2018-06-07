@@ -1,17 +1,19 @@
+@import 'extensions/all';
+
 p {
   margin: 0 0 14px;
-  color: #697b95;
+  color: $color-lynch;
 }
 
 h1 { font-size: 24px; }
 
 h2 {
   font-size: 14px;
-  color: #697b95;
+  color: $color-lynch;
 }
 
 a {
-  color: #008fff;
+  color: $color-link;
   text-decoration: none;
 }
 

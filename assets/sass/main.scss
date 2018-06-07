@@ -7,7 +7,7 @@ body {
 
 .wrapper {
   box-sizing: border-box; // Calculate wrapper spacing as part of width
-  max-width: 770px;
+  max-width: $max-width;
   width: 100%;
   margin: 40px auto 70px;
   padding: 0 10px;
