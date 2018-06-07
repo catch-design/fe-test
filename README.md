@@ -95,13 +95,14 @@ What would I expect to produce in version 1.1.0?
 
 Improvements!
 
-1. I would make more use of Node and Gulp extensions, and maybe produce a proper server, also spend a little more time on design review / polishing -- I know, I put up my hand and admit there are 1 or 2 pixels I may have missed :-p
-2. The gallery is currently very basic and uses pure HTML/CSS; I would improve the design, usability and functionality of this particular component by utilising front-end JavaScript
-3. I might consider using JavaScript validation for the contact form rather than using HTML5 validation. Why? HTML5 form validation is not very comprehensive and delivers a different experience to different browsers, so JS or even PHP is at least worth considering
-4. I might check the page through Google PageSpeed Insights to see if performance can be further improved, and also explore SEO and usability improvements
-5. Would consider increasing use of em units to tie design with typography
-6. Some code could be refactored, especially around the footer ... my rushed component :'(
-7. Most importantly of all! I would set up an analytics tool such as Google Analytics, and perhaps provide some method of user feedback. I would then explore metrics and feedback to develop hypothesis around which features are working and which features are not working, and I would support the design team in producing new features that meet the client > user needs.
+1. I would make more use of Node and Gulp extensions, and maybe produce a proper server
+2. I would spend more time polishing the design -- I know 1 or 2 pixels are off in some places, and I ask for forgiveness :-p
+3. The gallery is currently very basic and uses pure HTML/CSS with an overflow; I would improve the design, usability and functionality of this particular component by utilising front-end JavaScript to do something smarter
+4. I might consider using JavaScript validation for the contact form rather than using HTML5 validation. Why? HTML5 form validation is not very comprehensive and delivers a different experience to different browsers, so JS or even PHP is at least worth considering
+5. I might check the page through Google PageSpeed Insights to see if performance can be further improved, and also explore SEO and usability improvements
+6. Would consider increasing use of em units to tie design with typography
+7. Some code could be refactored, especially around the footer ... i'm not proud of that footer! it's giving me a refactoring itch :'(
+7. Most importantly of all! I would set up an analytics tool such as Google Analytics, and perhaps provide some method of user feedback. I would then explore metrics and feedback to develop a hypothesis around which features are working and which features are not working, and I would support the design team in producing new features that meet the client > user needs.
 
 Of course this is all academic because this is just a test..
 

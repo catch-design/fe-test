@@ -1,5 +1,8 @@
 @import 'extensions/all';
 
+// Because we used normalize css to reset our styling, we need to do some work to style our elements.
+// Normally I would give this file a lot more love and attention, but i'm keeping it minimal for now.
+
 p {
   margin: 0 0 14px;
   color: $color-lynch;
@@ -23,6 +26,6 @@ a:hover, a:active {
 }
 
 img {
-  width: 100%;
+  width: 100%; // Fixed images in responsive design only cause problems otherwise, it's better to use max-width for controlling those images
   height: auto;
 }

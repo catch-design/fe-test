@@ -10,15 +10,16 @@
   }
 
   &__item {
-    // I would talk to the designers if I had the chance, but I don't really
-    // want my product images going above 440px else they become too pixelated
+    // I don't really want my product images going above 440px else they become too pixelated
     // so I instead center align them until format becomes two columns
+    // In real life I would have a discussion with the designer to find a solution.
     max-width: 440px;
     margin: 0 auto;
     list-style-type: none;
     padding-bottom: 12px;
   }
 
+  // On the larger devices, we have enough real estate to make our products list a 2 column format
   @media only screen and (min-width: $max-design-width) {
       ul {
         display: flex;

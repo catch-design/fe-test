@@ -3,8 +3,8 @@
 <head>
 	<title>A front-end test of sorts</title>
 	<meta name="viewport" content="width=device-width" />
-    <meta name="description" content="A friend end test of sorts, completed by Lewis Barron.">
-    <meta name="keywords" content="SEO friendly keywords, Catch, Test, developer">
+    <meta name="description" content="A front-end test of sorts, completed by Lewis Barron.">
+    <meta name="keywords" content="SEO friendly keywords, Catch, Test, developer, whatnot">
 
     <!-- Normalize css used to reset default styling -->
     <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" media="all" />
@@ -29,13 +29,13 @@
         <p>Completed by Lewis Barron.</p>
     </header>
     <main class="content">
-        <form class="contact-form">
+        <form class="contact-form" action="somewhere-in-server-side-land.php">
             <h2>Form title</h2>
 
-            <input class="contact-form__field" type="text" onfocus="this.value=''" value="First name" />
-            <input class="contact-form__field" type="text" onfocus="this.value=''" value="Last name" />
-            <input class="contact-form__field" type="text" onfocus="this.value=''" value="E-mail address" />
-            <select class="contact-form__field">
+            <input class="contact-form__field" type="text" name="firstName" onfocus="this.value=''" value="First name" required />
+            <input class="contact-form__field" type="text" name="lastName" onfocus="this.value=''" value="Last name" required />
+            <input class="contact-form__field" type="email" name="e-mail" onfocus="this.value=''" value="E-mail address" />
+            <select class="contact-form__field" name="city">
                 <option>Auckland</option>
                 <option>Hamilton</option>
                 <option>Tauranga</option>

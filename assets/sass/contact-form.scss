@@ -17,6 +17,10 @@
   h2 {
     margin-bottom: 20px;
     font-weight: normal;
+
+    @media only screen and (min-width: $max-design-width) {
+      margin-bottom: 34px;
+    }
   }
 
   &__field {

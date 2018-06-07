@@ -1,5 +1,6 @@
 .gallery {
-  overflow: auto;
+  overflow: auto; // This creates us a minimalist slide gallery, and sets up the component for some smarter JS design later!
+  margin: 0 -10px; // Setting negative margins to allow gallery to overflow the layout side gutters
 
   &__images {
     width: 1024px; // An arbitrary value representing the contents of a long -- js powered -- image gallery

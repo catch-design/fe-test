@@ -9,12 +9,13 @@
     text-indent: -9999px; // We indent text off screen as this is only for screen readers / SEO
   }
 
+  // A bit of transition never hurts!
   &__button:hover, &__button:active  {
     opacity: 0.8;
     transition: 0.2s;
   }
 
-  // By using both background and background-image, we can use SVG images, backward-compatible to PNG
+  // By using both background and background-image, we can use SVG images with backward-compatiibility to PNG
   &__button--facebook {
     background: transparent url('../images/icon-facebook.png') no-repeat;
     background-image: url('../images/icon-facebook.svg'), none;
@@ -29,6 +30,4 @@
     background: transparent url('../images/icon-youtube.png') no-repeat;
     background-image: url('../images/icon-youtube.svg'), none;
   }
-
-
 }

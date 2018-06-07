@@ -26,7 +26,7 @@
 
   @media only screen and (min-width: $max-design-width) {
     // On mobile devices these classes are redundant
-    // But on larger devices it is used to create the left/right footer columns
+    // But on larger devices it is used to create the left/right footer columns, so fixed widths are okay
     &__column--left {
       float: left;
       width: 360px;
