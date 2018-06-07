@@ -1,19 +1,36 @@
+@import 'extensions/all';
+
 .products-list {
   h2 { margin-bottom: 5px; }
 
   ul {
-    display: flex;
-    flex-wrap: wrap;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
   &__item {
+    // I would talk to the designers if I had the chance, but I don't really
+    // want my product images going above 440px else they become too pixelated
+    // so I instead center align them until format becomes two columns
+    max-width: 440px;
+    margin: 0 auto;
     list-style-type: none;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 
-  @media only screen and (min-width: 600px) {
-      &__item { width: calc(100% * (1/2) - 20px); }
+  @media only screen and (min-width: $max-design-width) {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+      }
+
+      &__item {
+        flex-grow: 1;
+        width: calc(100% * (1/2) - 30px); // Calculate half available space minus the margin
+      }
+
+      &__item:nth-child(odd) { margin-right: 30px; }
   }
 }

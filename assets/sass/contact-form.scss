@@ -1,3 +1,5 @@
+@import 'extensions/all';
+
 .contact-form {
   margin: 0 auto;
   text-align: center;
@@ -5,9 +7,7 @@
   input, select {
     width: 100%;
     box-sizing: border-box;
-    display: block;
     border-radius: 5px;
-    margin: 0 auto 20px;
     padding: 16px 20px;
   }
 
@@ -17,8 +17,20 @@
   }
 
   &__field {
+    display: block;
+    max-width: 368px;
     border: 1px solid #d2dce8;
+    margin: 0 auto 20px;
     color: #697b95;
+  }
+
+  // Max design width should see fields formatted into two columns
+  // This could be done flexbox but that may be a tad overkill
+  // instead we can use inline blocks combined with nth-child pseudo
+  @media only screen and (min-width: $max-design-width) {
+    &__field { display: inline-block; }
+
+    &__field:nth-child(even) { margin-right: 30px; }
   }
 
   &__submit {
@@ -35,12 +47,22 @@
   }
 }
 
+// The dashed line below the contact form is a different width to the contact form so we
+// cannot simply apply it to the contact form container, so we need to try something different
+// we also don't want to use a bg image if we can avoid it.
+// What i'm doing here is creating an artificial element below the contact form using the
+// "after" pseudo, and simply applying the fixed width I need and a normal dashed border.
 .contact-form::after {
   display: block;
   width: 100%;
   max-width: 170px;
-  margin: 0 auto 35px;
+  margin: 0 auto 42px;
   border-bottom: 1px dashed #697B95;
-  padding-bottom: 20px;
+  padding-bottom: 42px;
   content: '';
+
+  @media only screen and (min-width: $max-design-width) {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+  }
 }

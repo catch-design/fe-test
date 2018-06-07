@@ -1,40 +1,4 @@
 // UTILITY STYLES
-
-// [LAYOUT]
-.u-float-left { float: left!important; }
-.u-float-right { float: right!important; }
-.u-no-float { float: none!important; }
-
-// [WIDTHS]
-// Width utilities are useful when you want to create a responsively sized
-// element, where using the full grid system may be a little overkill.
-// Example of use: A custom width heading that need to sit alongside
-// a background image.
-.u--full-width { width: 100%!important; }
-.u--2thirds-width { width: 66.66%!important; }
-.u--3quarters-width { width: 75%!important; }
-.u--half-width { width: 50%!important; }
-.u--1third-width { width: 33.33%!important; }
-.u--quarter-width { width: 25%!important; }
-
-// [GRAY DIVIDERS (BORDERS)]
-.u-divider-top {
-    border-top: 2px solid $color-divider!important;
-    padding-top: 1.4%!important;
-}
-
-.u-divider-right {
-    border-right: 2px solid $color-divider!important;
-    padding-right: 1.4%!important;
-}
-.u-divider-bottom {
-    border-bottom: 2px solid $color-divider!important;
-    padding-bottom: 1.4%!important;
-}
-.u-divider-left {
-    border-left: 2px solid $color-divider!important;
-    padding-left: 1.4%!important;
-}
 // Utilities are useful in situations where you need to make a very common
 // but generic modification, and writing a component modifier for it might be
 // a little "overkill". They are also useful for reseting specific styles.
@@ -48,24 +12,8 @@
 .u-spacing-bottom { margin-bottom: $spacing!important; }
 .u-spacing-left { margin-left: $spacing!important; }
 
-.u-spacing-top-small { margin-top: $spacing-small!important; }
-.u-spacing-right-small { margin-right: $spacing-small!important; }
-.u-spacing-bottom-small { margin-bottom: $spacing-small!important; }
-.u-spacing-left-small { margin-left: $spacing-small!important; }
-
-.u-spacing-top-smaller { margin-top: $spacing-smaller!important; }
-.u-spacing-right-smaller { margin-right: $spacing-smaller!important; }
-.u-spacing-bottom-smaller { margin-bottom: $spacing-smaller!important; }
-.u-spacing-left-smaller { margin-left: $spacing-smaller!important; }
-
-.u-spacing-top-smallest { margin-top: $spacing-smallest!important; }
-.u-spacing-right-smallest { margin-right: $spacing-smallest!important; }
-.u-spacing-bottom-smallest { margin-bottom: $spacing-smallest!important; }
-.u-spacing-left-smallest { margin-left: $spacing-smallest!important; }
-
 // [OTHER]
 .u-bold { font-weight: bold!important; }
-
 
 // [RESET]
 .u-no-margin { margin: 0!important; }

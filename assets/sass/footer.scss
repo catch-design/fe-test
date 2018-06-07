@@ -1,14 +1,32 @@
+@import 'extensions/all';
+
 .footer {
   margin: 60px -10px 0;
   border-top: 1px solid #d2dce8;
   padding: 60px 10px;
   text-align: center;
+  @media only screen and (min-width: $max-design-width) {
+    text-align: left;
+  }
   background-color: #fafafa;
 
-  h2 { margin-top: 0; }
+  h2 { margin: 0 0 6px; }
   p { margin-bottom: 6px; }
 
   &__content {
     padding-bottom: 24px;
+  }
+
+  @media only screen and (min-width: $max-design-width) {
+    // On mobile devices these classes are redundant
+    // But on larger devices it is used to create the left/right footer columns
+    &__column--left {
+      float: left;
+      width: 360px;
+    }
+    &__column--right {
+      float: right;
+      width: 270px;
+    }
   }
 }

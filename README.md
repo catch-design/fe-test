@@ -95,7 +95,7 @@ What would I expect to produce in version 1.1.0?
 
 Improvements!
 
-1. I would make more use of Node and Gulp extensions, and maybe produce a proper server
+1. I would make more use of Node and Gulp extensions, and maybe produce a proper server, also spend a little more time on design review / polishing -- I know, there are 1 or 2 pixels I may have missed :-p
 2. The gallery is currently very basic and uses pure HTML/CSS; I would improve the design, usability and functionality of this particular component by utilising front-end JavaScript
 3. I might consider using JavaScript validation for the contact form rather than using HTML5 validation. Why? HTML5 form validation is not very comprehensive and delivers a different experience to different browsers, so JS or even PHP is at least worth considering
 4. I might check the page through Google PageSpeed Insights to see if performance can be further improved, and also explore SEO and usability improvements

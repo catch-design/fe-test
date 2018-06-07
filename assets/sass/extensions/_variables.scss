@@ -2,6 +2,15 @@
 // common colours and spacing, this helps us to reduce code repetition,
 // improve clarity of our styles and general maintainability.
 
+// [Breakpoints]
+
+// The maximum width of our design is 780px (770 plus 10 padding), beyond that point the design does not change
+$max-design-width: 780px;
+
+// [Spacing]
+
+$spacing: 10px;
+
 // [Colours]
 
 $color-white: #fff;
