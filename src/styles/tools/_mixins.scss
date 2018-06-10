@@ -1,0 +1,14 @@
+// Helper function for base font-family
+@mixin base-font-family{
+  font-family: Arial, sans-serif;
+}
+
+// Helper function for creating base type treatment
+@mixin body-typography {
+  @include base-font-family;
+  color: $color-blue-dark;
+  font-size: $base-font-size;
+  font-weight: normal;
+  letter-spacing: $base-letter-spacing;
+  line-height: $base-line-height;
+}
