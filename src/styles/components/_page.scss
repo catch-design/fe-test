@@ -1,0 +1,25 @@
+// Page title
+.c-page__title{
+  @include base-font-family
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: $color-black;
+  letter-spacing: -0.4px;
+  text-align: center;
+  margin: $spacing-l 0;
+}
+
+// Page horizontal rule
+.c-page__divider{
+  border: none;
+  border-bottom: 1px dashed $color-blue-dark;
+  margin: $spacing-l auto;
+  max-width: 170px;
+}
+
+// Breakpoint for page mobile styles
+@media screen and (max-width: $mobile-breakpoint-width) {
+  .c-page__divider{
+    margin: 40px auto;
+  }
+}

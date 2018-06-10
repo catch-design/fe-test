@@ -8,9 +8,9 @@ import Footer from './Footer';
 export default () => (
   <div>
     <main className="o-wrapper" role="main">
-      <h1>A front-end test of sorts</h1>
+      <h1 className="c-page__title">A front-end test of sorts</h1>
       <Form />
-      <hr />
+      <hr className="c-page__divider" />
       <Thumbnails />
     </main>
     <Carousel />
