@@ -7,7 +7,7 @@ import Footer from './Footer';
 
 export default () => (
   <div>
-    <main role="main">
+    <main className="o-wrapper" role="main">
       <h1>A front-end test of sorts</h1>
       <Form />
       <hr />

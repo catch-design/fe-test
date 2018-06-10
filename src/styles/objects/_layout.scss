@@ -1,0 +1,11 @@
+// Collapsible flex-box grid object
+.o-layout{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+// Flex-box grid item
+.o-layout__item{
+  max-width: 370px;
+}
