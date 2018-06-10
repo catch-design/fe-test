@@ -1,0 +1,28 @@
+// Thumbnail grid container
+.c-thumbnail__container{
+  margin: 0 auto $spacing-m auto;
+}
+
+// Thumbnail grid item
+.c-thumbnail__item{
+  margin: 0 auto 20px auto;
+  width: 100%;
+}
+
+// Thumbnail image
+.c-thumbnail__image{
+  border-radius: $base-radius;
+  width: 100%;
+}
+
+// Thumbnail heading
+.c-thumbnail__heading{
+  @include body-typography;
+  font-weight: bold;
+  margin: $spacing-s 0 5px 0;
+}
+
+// Thumbnail article excerpt
+.c-thumbnail__excerpt{
+  margin-bottom: $spacing-s;
+}
