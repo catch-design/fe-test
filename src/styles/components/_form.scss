@@ -10,17 +10,23 @@ $form-input-height: 48px;
 
 // Override default placeholder styles
 @mixin input-placeholder-override {
+  &::placeholder{
+    @include base-font-family;
+    color: $color-blue-dark;
+    font-size: $base-font-size;
+    font-weight: normal;
+    letter-spacing: $base-letter-spacing;
+    opacity: 1;
+  }
   &::-webkit-input-placeholder{
     @include body-typography;
-  };
+  }
   &::-ms-input-placeholder{
     @include body-typography;
-  },
+  }
   &:-moz-placeholder{
     @include body-typography;
-  },
-  &:-moz-placeholder{
-    @include body-typography;
+    opacity: 1;
   }
 }
 
