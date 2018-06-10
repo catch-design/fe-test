@@ -1,0 +1,54 @@
+// Footer element container
+.c-footer__container{
+  background: $color-grey-light;
+  box-shadow: inset 0 1px 0 0 $color-grey-light;
+  padding: $spacing-xl 10px;
+  margin-top: $spacing-xl;
+}
+
+// Footer element grid
+.c-footer__grid{
+  margin: 0 auto;
+  max-width: $max-container-width;
+}
+
+// Footer social media icon links
+.c-footer__social__link{
+  display: inline-block;
+  margin: 0 $spacing-s $spacing-m 0;
+}
+
+// Footer office location section
+.c-footer__contact__location{
+  margin-bottom: $spacing-m;
+}
+
+// Footer contact headers
+.c-footer__contact__header{
+  font-weight: bold;
+}
+
+// Breakpoint for footer mobile styles
+@media screen and (max-width: $mobile-breakpoint-width) {
+  .c-footer__container{
+    padding: $spacing-l 0;
+    margin-top: $spacing-l;
+  }
+
+  // Center grid elements for mobile
+  .c-footer__grid{
+    justify-content: center;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  // Make social container sit below contact container
+  .c-footer__social{
+    max-width: 100%;
+    order: 2;
+  }
+  
+  .c-footer__social__link{
+    margin: $spacing-m $spacing-s $spacing-m 0;
+  }
+}
