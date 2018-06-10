@@ -1,0 +1,19 @@
+// Image carousel container
+.c-carousel__container{
+  display: flex;
+  margin: 0 auto;
+  max-width: $max-container-width - 10px; //-10 to align with <main /> container
+  overflow-x: hidden;
+}
+
+// Image carousel item
+.c-carousel__item{
+  margin: 0 5px;
+  border-radius: $base-radius;
+
+  // Override margin on the first slide element
+  // to sit flush with container
+  &:first-of-type{
+    margin: 0 5px 0 0;
+  }
+}
