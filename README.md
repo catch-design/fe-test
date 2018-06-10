@@ -17,6 +17,7 @@ A simple test for front end developers
 * To start production server locally:
   * First compile production build: `npm run build:prod`
   * Then start the server: `npm start`
+  * Site will be available on _localhost:3000_
 
 ### Yarn
 **Installation**
@@ -29,3 +30,4 @@ A simple test for front end developers
 * To start production server locally:
   * First compile production build: `yarn run build:prod`
   * Then start the server: `yarn start`
+  * Site will be available on _localhost:3000_
