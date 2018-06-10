@@ -5,17 +5,18 @@ A simple test for front end developers
 ## Specifications
  * Client built using React, Webpack, and SCSS.
  * Development server uses Node and Express.
+ * Styles structured based on ITCSS with BEM naming convention.
 
 ## Instructions
 
-* Build can be run locally using NPM or Yarn
+Build can be run locally using NPM or Yarn:
 
 ### NPM
 **Installation**
 * First, install dependancies: `npm install`
 
 **Development Server**
-* To start development server, run: `npm run dev-server`
+* To start development server: `npm run dev-server`
 
 **Production Server**
 * To start production server locally:
@@ -28,7 +29,7 @@ A simple test for front end developers
 * First, install dependancies: `yarn install`
 
 **Development Server**
-* To start development server, run: `yarn run dev-server`
+* To start development server: `yarn run dev-server`
 
 **Production Server**
 * To start production server locally:
