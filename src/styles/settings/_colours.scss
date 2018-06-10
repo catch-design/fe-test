@@ -1,3 +1,4 @@
+// Brand colors
 $color-black: #101820;
 $color-blue-dark: #697B95;
 $color-blue-light: #008FFF;
@@ -7,4 +8,6 @@ $color-grey-dark: #D2DCE8;
 $color-grey-light: #FAFAFA;
 $color-white: #FFFFFF;
 
+// Link colours
 $color-link: $color-blue-light;
+$color-link-hover: darken( $color-blue-light, 10% );
