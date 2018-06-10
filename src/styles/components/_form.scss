@@ -1,0 +1,79 @@
+// Form title
+.c-form__title{
+  @include body-typography;
+  margin-bottom: $spacing-m;
+  text-align: center;
+}
+
+// Height of form input fields
+$form-input-height: 48px;
+
+// Override default placeholder styles
+@mixin input-placeholder-override {
+  &::-webkit-input-placeholder{
+    @include body-typography;
+  };
+  &::-ms-input-placeholder{
+    @include body-typography;
+  },
+  &:-moz-placeholder{
+    @include body-typography;
+  },
+  &:-moz-placeholder{
+    @include body-typography;
+  }
+}
+
+// Form input base style
+.c-form__input{
+  @include input-placeholder-override;
+
+  background: $color-white;
+  border: 1px solid $color-grey-dark;
+  border-radius: $base-radius;
+  box-sizing: border-box;
+  height: $form-input-height;
+  padding-left: 20px;
+  margin: 10px auto;
+  width: 100%;
+
+  &:focus{
+    border: 1px solid $color-blue-light;
+    color: $color-blue-light;
+    outline: none;
+  }
+}
+
+// Form select dropdown
+.c-form__select{
+  // Override default dropdown arrow
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('/img/icons/dropdown_arrow.svg') no-repeat;
+  background-position: calc(100% - 20px);
+}
+
+// Form submit button
+.c-form__submit{
+  background: $color-green-light;
+  border: 1px solid $color-green-dark;
+  border-radius: $base-radius;
+  color: $color-white;
+  display: block;
+  height: $form-input-height;
+  margin: 10px auto 0 auto;
+  max-width: 100%;
+  text-align: center;
+  width: 270px;
+
+  &:hover{
+    background: $color-green-dark;
+  }
+}
+
+// Breakpoint for form mobile styles
+@media screen and (max-width: $mobile-breakpoint-width) {
+  .c-form__title{
+    margin-bottom: 20px;
+  }
+}
