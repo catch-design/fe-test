@@ -1,0 +1,9 @@
+html{
+  // Font override for rem scale
+  font-size: 62.5%;
+}
+
+* {
+  // Apply base typography
+  @include body-typography;
+}

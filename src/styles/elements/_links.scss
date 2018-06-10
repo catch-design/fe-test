@@ -1,0 +1,10 @@
+// Base styles for links
+a{
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+  }
+}
