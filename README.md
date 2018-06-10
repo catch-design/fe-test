@@ -2,6 +2,10 @@
 
 A simple test for front end developers
 
+## Specifications
+ * Client built using React, Webpack, and SCSS.
+ * Development server uses Node and Express.
+
 ## Instructions
 
 * Build can be run locally using NPM or Yarn
