@@ -1,29 +1,16 @@
-# Front End Developer Test
+# Author
 
-A simple test for front end developers
+Andre Lombaard
 
 ## Instructions
 
-1. Fork or clone this repo.
-2. Set up a "static" project that includes a basic build system.
-3. Develop a page based on the design using SCSS and a templating language of your choice.
-4. If you are completing this test as part of a job application please include a zip file of your project (including git config/metadata) with your application otherwise create a pull request and we'll take a look :)
+1. Clone the project.
+2. Change directory to the project path in a command prompt window.
+3. Run "npm i font-awesome".
+4. Browse to the project root directory and double-click the index.html file.
 
-### Guidelines
+### Know issues
 
-1. Your repo needs to include at minimum anything required to build the compiled HTML, CSS and JavaScript (where applicable).
-   Detailed instructions should be provided in the `README.md` file to setup and run the app.
-2. Use best practice.
-3. Show us what you're capable of without using CSS frameworks such as foundation, bootstrap, etc.
-4. Cross browser compatibility is important.
-5. Try not spend too much time on it.
-
-### Bonus Points
-
-* Use patterns like BEM, ITCSS
-* Accessibility
-* Consume dependencies with tools like Bower, NPM and RubyGems/Bundler
-* Compile any assets with a build tool like gulp, webpack etc
-* Unit and code quality tests
-* Include a dev server
-* Pay attention to the grid system
+1. When scaling to smaller screens the grid layout is not working properly as outlined in the sketch design.
+2. Pure CSS was used and therefore there are no global styling variables. Forgive me for this, I usually develop using the Angular CLI which takes care of the SCSS files and the compilation thereof, with the 2 hour time constraint I left this to focus on the completion of the screen layout.
+3. No treeshaking or minifications was done.
