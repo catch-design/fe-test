@@ -2,6 +2,15 @@
 
 A simple test for front end developers
 
+### Build Instructions
+
+```sh
+git clone https://github.com/jakefb/fe-test
+cd fe-test
+npm install
+npm run-script scss
+```
+
 ## Instructions
 
 1. Fork or clone this repo.

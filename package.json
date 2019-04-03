@@ -1,0 +1,23 @@
+{
+  "name": "fe-test",
+  "version": "1.0.0",
+  "description": "A simple test for front end developers ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch scss/design.scss css/design.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catchnz/fe-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catchnz/fe-test/issues"
+  },
+  "homepage": "https://github.com/catchnz/fe-test#readme",
+  "dependencies": {
+    "sass": "^1.17.3"
+  }
+}
