@@ -6,7 +6,7 @@ A simple test for front end developers
 
 1. Fork or clone this repo.
 2. Set up a "static" project that includes a basic build system.
-3. Develop a page based on the design using SCSS and a templating language of your choice.
+3. Using the design located here:  https://www.figma.com/file/Zd1qVlL18ozQlrEYsWX5GM/Catch-Design-Front-end-Test?node-id=0%3A1&t=dimpQI98eG4eI53V-1 develop a page using SCSS and a templating language of your choice. 
 6. Email tech-tests@catchdesign.co.nz with:
     1. A link to your repo OR
     2. A zip file of your project including git config/metadata
